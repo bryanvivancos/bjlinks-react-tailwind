@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('src/assets/fonts/Quicksand-VariableFont_wght.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@theme {
+    --color-fondo-linkedin: white;
+    --color-fondo-github: #171515;
+    --color-fondo-x: #14171A;
+    --color-amarillo-ig: rgba(255, 223, 32, 1);
+    --color-rosa-ig: rgba(230, 0, 118, 1);
+    --color-morado-ig: rgba(152, 16, 250, 1); 
+
+    --font-Quick: 'Quicksand', system-ui, sans-serif;
+}
