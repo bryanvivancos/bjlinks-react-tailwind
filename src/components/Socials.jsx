@@ -2,7 +2,7 @@ import '../styles/App.css'
 import SocialIcon from './atoms/SocialIcon'
 
 const Socials = () => {
-    return <div className='flex gap-2 mb-8'>
+    return <div className='flex flex-wrap gap-4 mb-8 justify-center'>
         <SocialIcon
             bg={"bg-fondo-linkedin"}
             url={"https://www.linkedin.com/in/bryan-josue-vivanco-silva-8739521bb/"}
