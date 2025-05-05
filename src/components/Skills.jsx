@@ -39,7 +39,7 @@ const Skills = () => {
             <SkillItem 
                 url={"https://reflex.dev/"}
                 skill={"reflex"}
-                ico={"public/assets/reflex.ico"}
+                ico={"/reflex.ico"}
             />
             <SkillItem 
                 url={"https://www.microsoft.com/es-es/sql-server"}

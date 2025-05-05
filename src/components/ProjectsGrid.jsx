@@ -22,7 +22,7 @@ const ProjectsGrid = () => {
                 url={"https://bryanvivancos.vercel.app/"}
                 skillName={"Python y Reflex"}
                 name={"Portfolio Web con Reflex"}
-                ico={"public/assets/reflex.ico"}
+                ico={"/reflex.ico"}
                 span={"col-span-1"}
                 background={pythonBackground}
             />
@@ -47,7 +47,7 @@ const ProjectsGrid = () => {
                 url={"https://github.com/bryanvivancos/album_project"}
                 skillName={"Python, Reflex y Supabase"}
                 name={"Album/Catalog"}
-                ico={"public/assets/reflex.ico"}
+                ico={"/reflex.ico"}
                 span={"col-span-2"}
                 background={pythonBackground}
             />
