@@ -1,11 +1,11 @@
 import React from 'react'
 import '../styles/App.css'
-import Header from '../components/header'
-import Socials from '../components/Socials'
-import Skills from '../components/Skills'
-import ProjectsGrid from '../components/ProjectsGrid'
-import Footer from '../components/Footer'
-import Certificates from '../components/Certificates'
+import Header from '../components/Header.jsx'
+import Socials from '../components/Socials.jsx'
+import Skills from '../components/Skills.jsx'
+import ProjectsGrid from '../components/ProjectsGrid.jsx'
+import Footer from '../components/Footer.jsx'
+import Certificates from '../components/Certificates.jsx'
 
 function App() {
 
