@@ -5,17 +5,17 @@ const ProjectsGrid = () => {
     const reactBackground = "bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-500 border border-cyan-900"
     const pythonBackground = "bg-linear-to-br from-[#1565A7] to-[#327EBD] border border-[#327EBD]"
 
-    return <div className='mb-8'>
+    return <div id='projects' className='mb-8'>
         <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Proyectos</h2>
 
-        <div className="grid grid-cols-3 gap-4 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 w-full">
 
             <Project
                 url={""}
                 skillName={"React JS y Tailwind CSS"}
                 name={"Página de Links"}
                 skill={"react"}
-                span={"col-span-2"}
+                span={"2"}
                 background={reactBackground}
             />
             <Project
@@ -23,7 +23,7 @@ const ProjectsGrid = () => {
                 skillName={"Python y Reflex"}
                 name={"Portfolio Web con Reflex"}
                 ico={"/reflex.ico"}
-                span={"col-span-1"}
+                span={"1"}
                 background={pythonBackground}
             />
             
@@ -32,7 +32,7 @@ const ProjectsGrid = () => {
                 skillName={"Python, Django y SQL"}
                 name={"Assist Control"}
                 skill={"python"}
-                span={"col-span-1"}
+                span={"1"}
                 background={pythonBackground}
             />
             <Project
@@ -40,7 +40,7 @@ const ProjectsGrid = () => {
                 skillName={"React JS"}
                 name={"CatQuiz Web"}
                 skill={"react"}
-                span={"col-span-2"}
+                span={"2"}
                 background={reactBackground}
             />
             <Project
@@ -48,7 +48,7 @@ const ProjectsGrid = () => {
                 skillName={"Python, Reflex y Supabase"}
                 name={"Album/Catalog"}
                 ico={"/reflex.ico"}
-                span={"col-span-2"}
+                span={"2"}
                 background={pythonBackground}
             />
             <Project
@@ -56,7 +56,7 @@ const ProjectsGrid = () => {
                 skillName={"Python"}
                 name={"Formulario Web a Word"}
                 skill={"python"}
-                span={"col-span-1"}
+                span={"1"}
                 background={pythonBackground}
             />
             <Project
@@ -64,7 +64,7 @@ const ProjectsGrid = () => {
                 skillName={"Python, FastAPI y MongoDB"}
                 name={"Backend Exercise"}
                 skill={"python"}
-                span={"col-span-1"}
+                span={"1"}
                 background={pythonBackground}
             />
             <Project
@@ -72,7 +72,7 @@ const ProjectsGrid = () => {
                 skillName={"Python"}
                 name={"Generador de Datos"}
                 skill={"python"}
-                span={"col-span-2"}
+                span={"2"}
                 background={pythonBackground}
             />
             <Project
@@ -80,7 +80,7 @@ const ProjectsGrid = () => {
                 skillName={"React JS"}
                 name={"Generador de Datos"}
                 skill={"react"}
-                span={"col-span-2"}
+                span={"2"}
                 background={reactBackground}
             />
             <Project
@@ -88,7 +88,7 @@ const ProjectsGrid = () => {
                 skillName={"GitHub"}
                 name={"Más Proyectos..."}
                 skill={"github"}
-                span={"col-span-1"}
+                span={"1"}
                 background={"bg-gradient-to-br from-gray-600 to-gray-400 border border-gray-900"}
             />
         </div>

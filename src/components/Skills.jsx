@@ -2,7 +2,7 @@ import '../styles/App.css'
 import SkillItem from './atoms/SkillItem'
 
 const Skills = () => {
-    return <div className='mb-8'>
+    return <div id='skills' className='mb-8'>
         
         <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Habilidades</h2>
 
@@ -42,8 +42,16 @@ const Skills = () => {
                 ico={"/reflex.ico"}
             />
             <SkillItem 
+                url={"https://git-scm.com/"}
+                skill={"bootstrap"}
+            />
+            <SkillItem 
+                url={"https://git-scm.com/"}
+                skill={"git"}
+            />
+            <SkillItem 
                 url={"https://www.microsoft.com/es-es/sql-server"}
-                skill={"sql"}
+                skill={"mssql"}
             />
             <SkillItem 
                 url={"https://www.mongodb.com/"}

@@ -2,12 +2,12 @@ import CertificateItem from "./atoms/CertificateItem"
 
 const Certificates = () => { 
     
-    return <div className="mb-8 font-Quick text-white">
+    return <div id="certificates" className="mb-8 font-Quick text-white">
         <h2 className="flex justify-center mb-4 text-xl font-bold font-Quick">
-            Certificates
+            Certificados
         </h2>
 
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-2">
             <CertificateItem 
                 url={"https://drive.google.com/file/d/1y3RMCUB6ECsQ2q52AffRIFzlWK1PXeDb/view?usp=sharing"}
                 logo="platzi" 
