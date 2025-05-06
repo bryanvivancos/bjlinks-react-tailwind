@@ -4,6 +4,9 @@ import Project from './atoms/Project.jsx'
 const ProjectsGrid = () => {   
     const reactBackground = "bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-500 border border-cyan-900"
     const pythonBackground = "bg-linear-to-br from-[#1565A7] to-[#327EBD] border border-[#327EBD]"
+    const reflexBackground = "bg-gradient-to-br from-violet-800 via-violet-600 to-violet-500 border border-violet-900"
+    const djangoBackground = "bg-gradient-to-br from-[#187451] to-[#27c187] border border-[#187451]"
+
 
     return <div id='projects' className='mb-8'>
         <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Proyectos</h2>
@@ -24,16 +27,16 @@ const ProjectsGrid = () => {
                 name={"Portfolio Web con Reflex"}
                 ico={"/reflex.ico"}
                 span={"1"}
-                background={pythonBackground}
+                background={reflexBackground}
             />
             
             <Project
                 url={"https://github.com/bryanvivancos/control-asist"}
                 skillName={"Python, Django y SQL"}
                 name={"Assist Control"}
-                skill={"python"}
+                skill={"django"}
                 span={"1"}
-                background={pythonBackground}
+                background={djangoBackground}
             />
             <Project
                 url={"https://github.com/bryanvivancos/catquizweb-v2"}
@@ -49,7 +52,7 @@ const ProjectsGrid = () => {
                 name={"Album/Catalog"}
                 ico={"/reflex.ico"}
                 span={"2"}
-                background={pythonBackground}
+                background={reflexBackground}
             />
             <Project
                 url={"https://github.com/bryanvivancos/formularioweb_a_pdf"}
@@ -62,10 +65,10 @@ const ProjectsGrid = () => {
             <Project
                 url={"https://github.com/bryanvivancos/backend_exercise_py"}
                 skillName={"Python, FastAPI y MongoDB"}
-                name={"Backend Exercise"}
-                skill={"python"}
+                name={"Python Backend"}
+                skill={"mongodb"}
                 span={"1"}
-                background={pythonBackground}
+                background={djangoBackground}
             />
             <Project
                 url={"https://github.com/bryanvivancos/python_crash_course/tree/main/generating_data/chapter_15"}
@@ -78,7 +81,7 @@ const ProjectsGrid = () => {
             <Project
                 url={"https://github.com/bryanvivancos/x_FollowCard"}
                 skillName={"React JS"}
-                name={"Generador de Datos"}
+                name={"Follow Card de X"}
                 skill={"react"}
                 span={"2"}
                 background={reactBackground}

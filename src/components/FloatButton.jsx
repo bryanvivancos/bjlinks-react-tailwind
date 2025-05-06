@@ -12,38 +12,41 @@ const FloatButton = () => {
         console.log("Menu Abierto:", !isClicked)
     }
 
-    return <div className='group fixed bottom-10 right-5 p-2 flex items-end justify-end z-30'>
+    return <div className='fixed bottom-10 right-5 p-2 flex items-end justify-end z-30'>
 
-        <button className={`shadow-3xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-emerald-700 to-emerald-500 z-50 absolute cursor-pointer`} onClick={handleClick}>
+        <button className={`shadow-3xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-500 z-50 absolute cursor-pointer`} onClick={handleClick}>
             <svg width="35" height="35"
-            className={`h-6 w-6 ${isClicked === true && 'rotate-90'}`}>
+            className={`h-6 w-6 transition-all duration-200 ease-out ${isClicked ? 'rotate-90' : 'rotate-0'}`}>
                 <use href={`${sprite}#menudots`}/>
             </svg>
         </button>
 
-        {/* <FloatBtnItem
-            to={'profile'}
-            item={'Perfil'}
-        /> */}
 
-
-
-
-        {/* <Link to='profile' smooth={true} duration={500}
-        className={`absolute w-30 rounded-full text-white font-Quick font-bold justify-center cursor-crosshair ${isClicked ? "transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 flex p-2 hover:p-3 bg-green-400 scale-100 hover:bg-green-600" : "hidden"}`}>
-            Perfil</Link> */}
-
-        {/* <Link to='skills' smooth={true} duration={500}
-        className={`absolute w-30 rounded-full text-white font-Quick font-bold justify-center cursor-crosshair ${isClicked ? "transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 group-hover:-translate-y-15 flex p-2 hover:p-3 bg-green-400 scale-100 hover:bg-green-600" : "hidden"}`}>
-            Habilidades</Link>
-
-        <Link to='projects' smooth={true} duration={500}
-        className={`absolute w-30 rounded-full text-white font-Quick font-bold justify-center cursor-crosshair ${isClicked ? "transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 group-hover:-translate-y-30 flex p-2 hover:p-3 bg-green-400 scale-100 hover:bg-green-600" : "hidden"}`}>
-            Proyectos</Link>
-
-        <Link to='certificates' smooth={true} duration={500}
-        className={`absolute w-30 rounded-full text-white font-Quick font-bold justify-center cursor-crosshair ${isClicked ? "transition-all duration-[0.2s] ease-out scale-y-0 group-hover:scale-y-100 group-hover:-translate-x-16 group-hover:-translate-y-45 flex p-2 hover:p-3 bg-green-400 scale-100 hover:bg-green-600" : "hidden"}`}>
-            Certificados</Link> */}
+        {/* {isClicked && ( */}
+            <div className={`flex flex-col gap-1 mb-5 mr-12 p-4 items-center justify-center
+            rounded-3xl z-40 transition-all duration-300 ease-out origin-bottom-right transform ${isClicked ? 'scale-100 opacity-100 translate-x-0 pointer-events-auto' : 'scale-0 opacity-0 translate-x-10 pointer-events-none'}`}>
+                
+                <FloatBtnItem 
+                    to="profile" 
+                    item="Perfil" 
+                    onClick={()=> setIsClicked(false)}/>
+                
+                <FloatBtnItem 
+                    to="skills" 
+                    item="Habilidades" 
+                    onClick={()=> setIsClicked(false)} />
+                
+                <FloatBtnItem 
+                    to="projects" 
+                    item="Proyectos" 
+                    onClick={()=> setIsClicked(false)}/>
+                
+                <FloatBtnItem 
+                    to="certificates" 
+                    item="Certificados" 
+                    onClick={()=> setIsClicked(false)}/>
+            </div>
+        {/* )} */}
 
     </div>
 }
