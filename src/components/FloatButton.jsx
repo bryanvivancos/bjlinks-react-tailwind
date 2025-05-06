@@ -23,8 +23,8 @@ const FloatButton = () => {
 
 
         {/* {isClicked && ( */}
-            <div className={`flex flex-col gap-1 mb-5 mr-12 p-4 items-center justify-center
-            rounded-3xl z-40 transition-all duration-300 ease-out origin-bottom-right transform ${isClicked ? 'scale-100 opacity-100 translate-x-0 pointer-events-auto' : 'scale-0 opacity-0 translate-x-10 pointer-events-none'}`}>
+            <div aria-hidden={!isClicked} className={`absolute bottom-4 right-10 flex flex-col gap-1 p-4 items-center justify-center
+            rounded-3xl transition-all duration-300 ease-out origin-bottom-right transform ${isClicked ? 'scale-100 opacity-100 translate-x-0 pointer-events-auto' : 'scale-0 opacity-0 translate-x-10 pointer-events-none'}`}>
                 
                 <FloatBtnItem 
                     to="profile" 

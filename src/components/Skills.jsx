@@ -2,7 +2,7 @@ import '../styles/App.css'
 import SkillItem from './atoms/SkillItem'
 
 const Skills = () => {
-    return <div id='skills' className='mb-8'>
+    return <div id='skills' className='mb-8 z-50'>
         
         <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Habilidades</h2>
 
