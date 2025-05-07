@@ -42,7 +42,7 @@ const Skills = () => {
                 ico={"/reflex.ico"}
             />
             <SkillItem 
-                url={"https://git-scm.com/"}
+                url={"https://getbootstrap.com/"}
                 skill={"bootstrap"}
             />
             <SkillItem 
