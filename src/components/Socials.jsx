@@ -14,15 +14,23 @@ const Socials = () => {
             social={"github"}
         />
         <SocialIcon
-            bg={"bg-fondo-x"}
-            url={"https://x.com/bryanvivancos"}
-            social={"x"}
+            bg={"bg-gradient-to-br from-azul-outlook via-viaazul-outlook to-lightazul-outlook"}
+            url={"mailto:bryanvivanco97@outlook.com"}
+            social={"mail"}
         />
         <SocialIcon
             bg={"bg-gradient-to-tr from-amarillo-ig via-rosa-ig to-morado-ig"}
             url={"https://instagram.com/bryanvivancos"}
             social={"instagram"}
         />
+        {/* <SocialIcon
+            bg={"bg-fondo-x"}
+            url={"https://x.com/bryanvivancos"}
+            social={"x"}
+        />
+
+         LINKEDIN GRADIENTE "bg-gradient-to-br from-[#0a66c2] to-[#0077B5]"
+        */}
     </div >
 }
 

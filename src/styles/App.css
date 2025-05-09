@@ -13,7 +13,9 @@
 @theme {
     --color-fondo-linkedin: white;
     --color-fondo-github: #171515;
-    --color-fondo-x: #14171a;
+    --color-azul-outlook: #0f3464;
+    --color-viaazul-outlook: #034fa0;
+    --color-lightazul-outlook: #249ee4;
     --color-amarillo-ig: rgba(255, 223, 32, 1);
     --color-rosa-ig: rgba(230, 0, 118, 1);
     --color-morado-ig: rgba(152, 16, 250, 1);
