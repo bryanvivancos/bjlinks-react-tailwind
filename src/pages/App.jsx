@@ -12,7 +12,7 @@ import FloatButton from '../components/FloatButton'
 function App() {
 
   return (
-    <div className='grid grid-rows-[auto_1fr_auto] min-h-dvh justify-center items-center max-w-2xl  mx-4'>
+    <div className='grid grid-rows-[auto_1fr_auto] min-h-dvh justify-center items-center max-w-2xl  mx-6'>
 
       <Header/>
       <main>

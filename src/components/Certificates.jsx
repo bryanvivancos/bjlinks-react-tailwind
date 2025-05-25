@@ -9,6 +9,12 @@ const Certificates = () => {
 
         <div className="flex flex-col gap-2">
             <CertificateItem 
+                url={"https://drive.google.com/file/d/1DOiJM3XsKc_baPJ2I848DnGbqXqnnbvs/view?usp=sharing"}
+                logo="platzi" 
+                from="Platzi" 
+                course="Curso Fundamentos de Node JS"/>
+
+            <CertificateItem 
                 url={"https://drive.google.com/file/d/1y3RMCUB6ECsQ2q52AffRIFzlWK1PXeDb/view?usp=sharing"}
                 logo="platzi" 
                 from="Platzi" 

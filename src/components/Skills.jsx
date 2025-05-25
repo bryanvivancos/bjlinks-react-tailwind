@@ -57,6 +57,10 @@ const Skills = () => {
                 url={"https://www.mongodb.com/"}
                 skill={"mongodb"}
             />
+            <SkillItem 
+                url={"https://nodejs.org/es"}
+                skill={"nodejs"}
+            />
         </div>
             
     </div>
