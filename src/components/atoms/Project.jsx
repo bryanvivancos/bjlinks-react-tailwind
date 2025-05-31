@@ -7,7 +7,7 @@ const Project = ({ url, skillName, name, skill, ico, span, background}) => {
         <a href={url} 
         target="_blank" 
         aria-label={`Proyecto de ${skill}`}
-        className={`relative rounded-3xl overflow-hidden border flex items-start hover:scale-105 hover:contrast-125 transition p-7 min-h-28 col-span-1 ${span} group ${background}`}>
+        className={`my-2 relative rounded-3xl overflow-hidden border flex items-start hover:scale-105 hover:contrast-125 transition p-7 min-h-28 col-span-1 ${span} group ${background}`}>
 
             <div className='absolute top-2 left-2 flex gap-2 items-center w-full'>
                 <span className='text-xs border rounded-xl px-2 py-0.5 z-10 text-white'>

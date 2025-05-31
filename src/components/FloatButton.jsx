@@ -37,7 +37,7 @@ const FloatButton = () => {
                     onClick={()=> setIsClicked(false)} />
                 
                 <FloatBtnItem 
-                    to="projects" 
+                    to="projectstab" 
                     item="Proyectos" 
                     onClick={()=> setIsClicked(false)}/>
                 
