@@ -1,6 +1,5 @@
 import sprite from '../../assets/sprite.svg'
 
-
 const CertificateItem = ({ url, logo, ico,from, course}) => { 
     return <div className="gap-6">
         <a href={url} target='_blank'

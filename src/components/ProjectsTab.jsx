@@ -51,14 +51,6 @@ const ProjectsTab = () => {
                 background={reflexBackground}
             />
             <Project
-                url={"https://github.com/bryanvivancos/formularioweb_a_pdf"}
-                skillName={"Python"}
-                name={"Formulario Web a Word"}
-                skill={"python"}
-                span={"md:col-span-1"}
-                background={pythonBackground}
-            />
-            <Project
                 url={"https://github.com/bryanvivancos/backend_exercise_py"}
                 skillName={"Python, FastAPI y MongoDB"}
                 name={"Python Backend"}
@@ -94,6 +86,14 @@ const ProjectsTab = () => {
                     span={"md:col-span-2"}
                     background={reactBackground}
                 />
+                <Project
+                url={"https://github.com/bryanvivancos/formularioweb_a_pdf"}
+                skillName={"Python"}
+                name={"Formulario Web a Word"}
+                skill={"python"}
+                span={"md:col-span-1"}
+                background={pythonBackground}
+            />
             </div>
         )
     }
@@ -102,10 +102,10 @@ const ProjectsTab = () => {
         <div id='projectstab' className='mb-8 w-full'>
             <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Proyectos</h2>
 
-            <div className="flex flex-wrap justify-around border-b">
+            <div className="flex flex-wrap justify-around border-b mb-8">
                 {tabs.map((tab) => (
                     <button key={tab.id}
-                    className={`px-4 py-2 text-white font-Quick ${activeTab === tab.id ? "border-b-2 border-emerald-900 text-emerald-300" : "hover:text-emerald-300"}`}
+                    className={`px-4 py-2 text-white w-1/2 font-Quick ${activeTab === tab.id ? "border-b-2 border-emerald-900 text-emerald-300" : "hover:text-emerald-300"}`}
                     onClick={() => setActiveTab(tab.id)} 
                     >
                         {tab.label}
