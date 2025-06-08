@@ -26,6 +26,14 @@ const ProjectsTab = () => {
                 background={reactBackground}
             />
             <Project
+                url={"https://randomizer-app-psi.vercel.app/"}
+                skillName={"React JS y Tailwind CSS"}
+                name={"Randomizer App"}
+                skill={"react"}
+                span={"md:col-span-2"}
+                background={reactBackground}
+            />
+            <Project
                 url={"https://bryanvivancos.vercel.app/"}
                 skillName={"Python y Reflex"}
                 name={"Portfolio Web con Reflex"}
