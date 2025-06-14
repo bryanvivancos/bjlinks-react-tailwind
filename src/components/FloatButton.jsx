@@ -5,7 +5,7 @@ import FloatBtnItem from './atoms/FloatBtnItem'
 const FloatButton = () => {
 
     const [isClicked, setIsClicked] = useState(false)
-    const buttonRef = useRef(null)
+    // const buttonRef = useRef(null)
 
     const handleClick = () => {
         setIsClicked(!isClicked)
