@@ -84,10 +84,10 @@ const ProjectsTab = () => {
         clientes: (
             <div>
                 <Project
-                    url={"https://github.com/bryanvivancos/catquizweb-v2"}
+                    url={"https://catquizpe.vercel.app/"}
                     skillName={"React JS y Tailwind CSS"}
-                    description={"Web para la empresa Catquiz con React."}
-                    name={"CatQuiz Web"}
+                    description={"Link Web para la empresa Catquiz con React."}
+                    name={"CatQuiz - Link Bio"}
                     skill={"react"}
                     span={"md:col-span-2"}
                     // background={reactBackground}
