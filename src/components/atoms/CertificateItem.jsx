@@ -6,7 +6,7 @@ const CertificateItem = ({ url, logo, ico, from, course}) => {
         className='flex gap-4 mr-0 group items-center'>
             {ico  ? 
                 (<div className="group-hover:animate-slide-in-left size-12 md:size-18 object-contain flex items-center justify-center">
-                    <img className="max-h-16" 
+                    <img className="h-12 md:h-16" 
                         src={ico} alt= {`icono ${logo}`} /></div>
                 ) :
                 (<svg width="60" height="60"
