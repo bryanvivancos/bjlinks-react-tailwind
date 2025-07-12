@@ -10,7 +10,7 @@ const Certificates = () => {
         <div className="flex flex-col gap-2">
             <CertificateItem 
                 url={"https://drive.google.com/file/d/1C6im2EXWFjePTRj7e4r7-ZKzxFRuk9ee/view?usp=sharing"}
-                logo="certifies" 
+                ico={"/universidad_nacional_de_ingenieria_logo_vector.ico"}
                 from="Universidad Nacional de Ingenieria - UNI" 
                 course="Cloud Computing: AWS - Azure - Google Cloud"/>
             

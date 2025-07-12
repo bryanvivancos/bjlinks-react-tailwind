@@ -1,12 +1,14 @@
 import sprite from '../../assets/sprite.svg'
 
-const CertificateItem = ({ url, logo, ico,from, course}) => { 
+const CertificateItem = ({ url, logo, ico, from, course}) => { 
     return <div className="gap-6">
         <a href={url} target='_blank'
         className='flex gap-4 mr-0 group items-center'>
             {ico  ? 
-                (<img className="group-hover:animate-slide-in-left" 
-                    src={ico} alt= {`icono ${logo}`} />) :
+                (<div className="group-hover:animate-slide-in-left size-12 md:size-18 object-contain flex items-center justify-center">
+                    <img className="h-16" 
+                        src={ico} alt= {`icono ${logo}`} /></div>
+                ) :
                 (<svg width="60" height="60"
                 className="group-hover:animate-slide-in-left size-12 md:size-18">
                     <use href={`${sprite}#${logo}`}/>
