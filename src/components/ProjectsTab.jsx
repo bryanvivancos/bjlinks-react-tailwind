@@ -18,6 +18,15 @@ const ProjectsTab = () => {
         personales: (
             <div>
             <Project
+                url={"https://quizter-web.vercel.app/"}
+                skillName={"React JS, Zustand, Material UI"}
+                description={"Página de preguntas de cultura general en la que podras a prueba tus conocimientos."}
+                name={"Quizter App"}
+                skill={"react"}
+                span={"md:col-span-2"}
+                // background={reactBackground}
+            />
+            <Project
                 url={"https://randomizer-app-psi.vercel.app/"}
                 skillName={"React JS y Tailwind CSS"}
                 description={"Web de sorteos y datos aleatorios."}
