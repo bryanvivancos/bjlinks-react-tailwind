@@ -5,12 +5,12 @@ const CertificateItem = ({ url, logo, ico, from, course}) => {
         <a href={url} target='_blank'
         className='flex gap-4 mr-0 group items-center'>
             {ico  ? 
-                (<div className="group-hover:animate-slide-in-left size-12 md:size-18 object-contain flex items-center justify-center">
+                (<div className="group-hover:animate-squeeze size-12 md:size-18 object-contain flex items-center justify-center">
                     <img className="h-8 xs:h-12 md:h-16" 
                         src={ico} alt= {`icono ${logo}`} /></div>
                 ) :
                 (<svg width="60" height="60"
-                className="group-hover:animate-slide-in-left size-12 md:size-18">
+                className="group-hover:animate-squeeze size-12 md:size-18">
                     <use href={`${sprite}#${logo}`}/>
                 </svg>) 
             }

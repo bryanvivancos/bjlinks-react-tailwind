@@ -61,6 +61,15 @@ const Skills = () => {
                 url={"https://nodejs.org/es"}
                 skill={"nodejs"}
             />
+            <SkillItem 
+                url={"https://nextjs.org/"}
+                skill={"nextjs"}
+            />
+            <SkillItem 
+                url={"https://zustand-demo.pmnd.rs/"}
+                skill={"zustand"}
+                ico={"/zustand.ico"}
+            />
         </div>
             
     </div>
