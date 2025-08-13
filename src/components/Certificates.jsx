@@ -59,7 +59,7 @@ const Certificates = () => {
                 url={"https://drive.google.com/file/d/1_uIvmFr-5gnHRUNZt-9g1iPz8RihqT2P/view?usp=drive_link"}
                 logo="certifies" 
                 from="IBM" 
-                course="Applied Data with PYTHON" />
+                course="Applied Data Science with PYTHON" />
             
             <CertificateItem 
                 url={"https://drive.google.com/file/d/1IY8a3koFBj9LXOB8GCmOxS-8oduj26Lj/view?usp=sharing"}
