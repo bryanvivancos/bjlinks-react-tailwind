@@ -70,6 +70,10 @@ const Skills = () => {
                 skill={"zustand"}
                 ico={"/zustand.ico"}
             />
+            <SkillItem 
+                url={"https://expressjs.com/"}
+                skill={"expressjs"}
+            />
         </div>
             
     </div>

@@ -19,7 +19,7 @@ const Project = ({ url, skillName, description, name, skill, ico, span }) => {
                     </svg>
             </div>
             
-            <p className='text-white text-sm'
+            <p className='text-white text-sm pr-16'
             >{ description }</p>
 
             <span className=' bottom-2 left-2 font-bold text-xl z-10 text-white text flex my-1'>

@@ -19,8 +19,8 @@ const ProjectsTab = () => {
             <div>
             <Project
                 url={"https://quizter-web.vercel.app/"}
-                skillName={"React JS, Zustand y Material UI"}
-                description={"Página de preguntas de cultura general en la que pondras a prueba tus conocimientos."}
+                skillName={"React JS, Zustand, Material UI y Express.js"}
+                description={"Página de preguntas de cultura general en la que pondras a prueba tus conocimientos. Usando Express.js para la API"}
                 name={"Quizter App"}
                 skill={"react"}
                 span={"md:col-span-2"}
