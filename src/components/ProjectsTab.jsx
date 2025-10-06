@@ -88,6 +88,15 @@ const ProjectsTab = () => {
                 span={"md:col-span-2"}
                 // background={reactBackground}
             />
+                <Project
+                url={"https://github.com/bryanvivancos/mj-awards-webscrapping"}
+                skillName={"Python"}
+                description={"Haciendo web scrapping de la página de los premios un cantante en wikipedia."}
+                name={"Web Scrapping con Python"}
+                skill={"python"}
+                span={"md:col-span-2"}
+                // background={reactBackground}
+            />
             </div>
         ),
         clientes: (
