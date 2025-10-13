@@ -19,7 +19,7 @@ const ProjectsTab = () => {
             <div>
             <Project
                 url={"https://quizter-web.vercel.app/"}
-                skillName={"React JS, Zustand, Material UI y Express.js"}
+                skillName={"React, Typescript, Zustand, Material UI y Express.js"}
                 description={"Página de preguntas de cultura general en la que pondras a prueba tus conocimientos. Usando Express.js para la API"}
                 name={"Quizter App"}
                 skill={"react"}
@@ -28,7 +28,7 @@ const ProjectsTab = () => {
             />
             <Project
                 url={"https://randomizer-app-psi.vercel.app/"}
-                skillName={"React JS y Tailwind CSS"}
+                skillName={"React, Javascript y Tailwind CSS"}
                 description={"Web de sorteos y datos aleatorios."}
                 name={"Randomizer App"}
                 skill={"react"}
@@ -81,7 +81,7 @@ const ProjectsTab = () => {
             /> */}
             <Project
                 url={"https://github.com/bryanvivancos/x_FollowCard"}
-                skillName={"React JS"}
+                skillName={"React y Javascript"}
                 description={"Plantilla simple de Seguir/Dejar de seguir de X."}
                 name={"Follow Card de X"}
                 skill={"react"}
@@ -103,7 +103,7 @@ const ProjectsTab = () => {
             <div>
                 <Project
                     url={"https://catquizpe.vercel.app/"}
-                    skillName={"React JS y Tailwind CSS"}
+                    skillName={"React, Javascript y Tailwind CSS"}
                     description={"Link Web para la empresa Catquiz con React."}
                     name={"CatQuiz - Link Bio"}
                     skill={"react"}
