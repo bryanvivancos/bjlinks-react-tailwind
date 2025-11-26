@@ -17,6 +17,15 @@ const ProjectsTab = () => {
     const contents = {
         personales: (
             <div>
+                <Project
+                url={"https://bryanvivancosbusiness.vercel.app/"}
+                skillName={"React, Typescript y Strapi"}
+                description={"Tarjeta que muestra tus datos mas importantes que se puede compartir, con qr integrado para compartirlo y botón para agregar contacto"}
+                name={"Tarjeta Digital Profesional"}
+                skill={"react"}
+                span={"md:col-span-2"}
+                // background={reactBackground}
+            />
             <Project
                 url={"https://quizter-web.vercel.app/"}
                 skillName={"React, Typescript, Zustand, Material UI y Express.js"}
