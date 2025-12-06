@@ -18,6 +18,15 @@ const ProjectsTab = () => {
         personales: (
             <div>
                 <Project
+                url={"https://vincode.dev"}
+                skillName={"React, Typescript y Tailwind CSS"}
+                description={"Startup de Desarrollo Web"}
+                name={"Vincode.dev"}
+                skill={"react"}
+                span={"md:col-span-2"}
+                // background={reactBackground}
+            />
+                <Project
                 url={"https://bryanvivancosbusiness.vercel.app/"}
                 skillName={"React, Typescript y Strapi"}
                 description={"Tarjeta que muestra tus datos mas importantes que se puede compartir fácilmente ya que cuenta con qr integrado y botón para agregar contacto"}
