@@ -9,6 +9,12 @@ const Certificates = () => {
 
         <div className="flex flex-col gap-2">
             <CertificateItem 
+                url={"https://drive.google.com/file/d/1_cQL2pSuzzV1V_9WS6sKCRLqNsO3D6Vi/view?usp=sharing"}
+                logo="platzi"
+                from="Platzi" 
+                course="ETL e Ingesta de Datos con Python"/>
+            
+            <CertificateItem 
                 url={"https://drive.google.com/file/d/1qXr2A-MLvV1EEakO-4hb-C5kgQSaklyt/view?usp=sharing"}
                 ico={"/universidad_nacional_de_ingenieria_logo_vector.ico"}
                 from="Universidad Nacional de Ingenieria - UNI" 

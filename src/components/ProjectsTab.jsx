@@ -17,9 +17,18 @@ const ProjectsTab = () => {
     const contents = {
         personales: (
             <div>
+                <Project
+                url={"https://bryanvivancosbusiness.vercel.app/"}
+                skillName={"React, Typescript y Strapi"}
+                description={"Tarjeta que muestra tus datos mas importantes que se puede compartir fácilmente ya que cuenta con qr integrado y botón para agregar contacto"}
+                name={"Tarjeta Digital Profesional"}
+                skill={"react"}
+                span={"md:col-span-2"}
+                // background={reactBackground}
+            />
             <Project
                 url={"https://quizter-web.vercel.app/"}
-                skillName={"React JS, Zustand, Material UI y Express.js"}
+                skillName={"React, Typescript, Zustand, Material UI y Express.js"}
                 description={"Página de preguntas de cultura general en la que pondras a prueba tus conocimientos. Usando Express.js para la API"}
                 name={"Quizter App"}
                 skill={"react"}
@@ -28,7 +37,7 @@ const ProjectsTab = () => {
             />
             <Project
                 url={"https://randomizer-app-psi.vercel.app/"}
-                skillName={"React JS y Tailwind CSS"}
+                skillName={"React, Javascript y Tailwind CSS"}
                 description={"Web de sorteos y datos aleatorios."}
                 name={"Randomizer App"}
                 skill={"react"}
@@ -81,10 +90,19 @@ const ProjectsTab = () => {
             /> */}
             <Project
                 url={"https://github.com/bryanvivancos/x_FollowCard"}
-                skillName={"React JS"}
+                skillName={"React y Javascript"}
                 description={"Plantilla simple de Seguir/Dejar de seguir de X."}
                 name={"Follow Card de X"}
                 skill={"react"}
+                span={"md:col-span-2"}
+                // background={reactBackground}
+            />
+                <Project
+                url={"https://github.com/bryanvivancos/mj-awards-webscrapping"}
+                skillName={"Python"}
+                description={"Haciendo web scrapping de la página de los premios un cantante en wikipedia."}
+                name={"Web Scrapping con Python"}
+                skill={"python"}
                 span={"md:col-span-2"}
                 // background={reactBackground}
             />
@@ -94,7 +112,7 @@ const ProjectsTab = () => {
             <div>
                 <Project
                     url={"https://catquizpe.vercel.app/"}
-                    skillName={"React JS y Tailwind CSS"}
+                    skillName={"React, Javascript y Tailwind CSS"}
                     description={"Link Web para la empresa Catquiz con React."}
                     name={"CatQuiz - Link Bio"}
                     skill={"react"}
