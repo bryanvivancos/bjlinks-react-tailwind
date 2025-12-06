@@ -2,6 +2,8 @@ export const DESCRIPTION = "Desarrollador Web e Ingeniero Electrónico y Telecom
 
 export const FOOTER_DESCRIPTION = "Desarrollador Web e Ingeniero Electrónico y Telecomunicaciones Colegiado de la Universidad Nacional de Piura";
 
+export const DIGITAL_CARD = "https://bryanvivancosbusiness.vercel.app/"
+
 export const LINKEDIN = "https://www.linkedin.com/in/bryan-josue-vivanco-silva-8739521bb/"
 
 export const GITHUB = "https://github.com/bryanvivancos"

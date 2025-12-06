@@ -74,6 +74,10 @@ const Skills = () => {
                 url={"https://expressjs.com/"}
                 skill={"expressjs"}
             />
+            <SkillItem 
+                url={"https://strapi.io/"}
+                skill={"strapi"}
+            />
         </div>
             
     </div>
