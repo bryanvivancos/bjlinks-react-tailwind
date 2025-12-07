@@ -9,12 +9,12 @@ const Header = () => {
                     <img src='/IMG-20230911-WA0113.webp' alt="imagen de bryan web" 
                     className='h-50 md:h-80 object-cover mask-radial-at-center mask-radial-from-65% mask-radial-to-70% animate-slide-in-top mt-4 '
                     />   
-                    <a className={`bg-emerald-800 text-emerald-300 md:size-14 flex items-center justify-center rounded-full hover:scale-120 transition-transform absolute bottom-4 right-12`} 
+                    <a className={`bg-emerald-800 text-emerald-300 size-16 md:size-24 flex items-center justify-center rounded-full hover:scale-120 transition-transform absolute bottom-0 right-2`} 
                         href={DIGITAL_CARD}
                         title={`Tarjeta digital`}
                         target='_blank'
                         >
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='size-6 md:size-8 m-2'>
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className='size-10 md:size-14 m-2'>
                                 <use href={`${sprite}#idbadge`}/>
                             </svg>
                         </a>
