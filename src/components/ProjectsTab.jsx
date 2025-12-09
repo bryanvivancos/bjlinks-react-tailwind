@@ -17,15 +17,6 @@ const ProjectsTab = () => {
     const contents = {
         personales: (
             <div>
-            <Project
-                url={"https://catquiz-card.vercel.app/"}
-                skillName={"React, Typescript, Tailwind CSS y Strapi"}
-                description={"Tarjeta digital para Joyeria"}
-                name={"CatQuiz - Business Card"}
-                skill={"react"}
-                span={"md:col-span-2"}
-                // background={reactBackground}
-            />
                 <Project
                 url={"https://vincode.dev"}
                 skillName={"React, Typescript y Tailwind CSS"}
@@ -128,6 +119,15 @@ const ProjectsTab = () => {
         ),
         clientes: (
             <div>
+                <Project
+                url={"https://catquiz-card.vercel.app/"}
+                skillName={"React, Typescript, Tailwind CSS y Strapi"}
+                description={"Tarjeta digital para Joyeria"}
+                name={"CatQuiz - Business Card"}
+                skill={"react"}
+                span={"md:col-span-2"}
+                // background={reactBackground}
+            />
                 <Project
                     url={"https://catquizpe.vercel.app/"}
                     skillName={"React, Javascript y Tailwind CSS"}
