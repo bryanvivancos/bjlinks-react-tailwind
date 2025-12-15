@@ -18,116 +18,127 @@ const ProjectsTab = () => {
         personales: (
             <div>
                 <Project
-                url={"https://vincode.dev"}
-                skillName={"React, Typescript y Tailwind CSS"}
-                description={"Startup de Desarrollo Web"}
-                name={"Vincode.dev"}
-                skill={"react"}
-                span={"md:col-span-2"}
-                // background={reactBackground}
-            />
+                    url={"https://vincode.dev"}
+                    skillName={"React, Typescript y Tailwind CSS"}
+                    description={"Startup de desarrollo de software que ofrece soluciones personalizadas para empresas e independientes."}
+                    name={"Vincode.dev"}
+                    skill={"react"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/vincode-img.webp"}
+                    // background={reactBackground}
+                />
                 <Project
-                url={"https://bryanvivancosbusiness.vercel.app/"}
-                skillName={"React, Typescript y Strapi"}
-                description={"Tarjeta que muestra tus datos mas importantes que se puede compartir fácilmente ya que cuenta con qr integrado y botón para agregar contacto"}
-                name={"Tarjeta Digital Profesional"}
-                skill={"react"}
-                span={"md:col-span-2"}
-                // background={reactBackground}
-            />
-            <Project
-                url={"https://quizter-web.vercel.app/"}
-                skillName={"React, Typescript, Zustand, Material UI y Express.js"}
-                description={"Página de preguntas de cultura general en la que pondras a prueba tus conocimientos. Usando Express.js para la API"}
-                name={"Quizter App"}
-                skill={"react"}
-                span={"md:col-span-2"}
-                // background={reactBackground}
-            />
-            <Project
-                url={"https://randomizer-app-psi.vercel.app/"}
-                skillName={"React, Javascript y Tailwind CSS"}
-                description={"Web de sorteos y datos aleatorios."}
-                name={"Randomizer App"}
-                skill={"react"}
-                span={"md:col-span-2"}
-                // background={reactBackground}
-            />
-            <Project
-                url={"https://bryanvivancos.vercel.app/"}
-                skillName={"Python y Reflex"}
-                description={"Página web que muestra mi portafolio personal usando las tecnologías Reflex y Python."}
-                name={"Portfolio Web con Reflex"}
-                ico={"/reflex.ico"}
-                span={"md:col-span-1"}
-                // background={reflexBackground}
-            />
-            
-            <Project
-                url={"https://github.com/bryanvivancos/control-asist"}
-                skillName={"Python, Django y SQL"}
-                description={"Control de asistencias para empresas con Python, Django, SQL Server."}
-                name={"Assist Control"}
-                skill={"django"}
-                span={"md:col-span-1"}
-                // background={djangoBackground}
-            />
-            <Project
-                url={"https://github.com/bryanvivancos/album_project"}
-                skillName={"Python, Reflex y Supabase"}
-                description={"Plataforma con CRUD completo, muestra un catálogo de items con backend en SUPABASE."}
-                name={"Album/Catalog"}
-                ico={"/reflex.ico"}
-                span={"md:col-span-2"}
-                // background={reflexBackground}
-            />
-            {/* <Project
-                url={"https://github.com/bryanvivancos/backend_exercise_py"}
-                skillName={"Python, FastAPI y MongoDB"}
-                name={"Python Backend"}
-                skill={"mongodb"}
-                span={"md:col-span-1"}
-                // background={djangoBackground}
-            /> */}
-            {/* <Project
-                url={"https://github.com/bryanvivancos/python_crash_course/tree/main/generating_data/chapter_15"}
-                skillName={"Python"}
-                name={"Generador de Datos"}
-                skill={"python"}
-                span={"md:col-span-2"}
-                // background={pythonBackground}
-            /> */}
-            <Project
-                url={"https://github.com/bryanvivancos/x_FollowCard"}
-                skillName={"React y Javascript"}
-                description={"Plantilla simple de Seguir/Dejar de seguir de X."}
-                name={"Follow Card de X"}
-                skill={"react"}
-                span={"md:col-span-2"}
-                // background={reactBackground}
-            />
+                    url={"https://bryanvivancosbusiness.vercel.app/"}
+                    skillName={"React, Typescript y Strapi"}
+                    description={"Impulsa tu presencia profesional con una tarjeta digital personalizada que reúne todos tus datos de contacto."}
+                    name={"Tarjeta Digital Profesional"}
+                    skill={"react"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/bj-card-img.webp"}
+                    // background={reactBackground}
+                />
                 <Project
-                url={"https://github.com/bryanvivancos/mj-awards-webscrapping"}
-                skillName={"Python"}
-                description={"Haciendo web scrapping de la página de los premios un cantante en wikipedia."}
-                name={"Web Scrapping con Python"}
-                skill={"python"}
-                span={"md:col-span-2"}
-                // background={reactBackground}
-            />
+                    url={"https://quizter-web.vercel.app/"}
+                    skillName={"React, Typescript, Zustand, Material UI y Express.js"}
+                    description={"Página de preguntas de cultura general en la que pondras a prueba tus conocimientos. Usando Express.js para la API"}
+                    name={"Quizter App"}
+                    skill={"react"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/quizter-img.webp"}
+                    // background={reactBackground}
+                />
+                <Project
+                    url={"https://randomizer-app-psi.vercel.app/"}
+                    skillName={"React, Javascript y Tailwind CSS"}
+                    description={"Web de sorteos, juegos y datos aleatorios."}
+                    name={"Randomizer App"}
+                    skill={"react"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/randomizer-img.webp"}
+                    // background={reactBackground}
+                />
+                <Project
+                    url={"https://bryanvivancos.vercel.app/"}
+                    skillName={"Python y Reflex"}
+                    description={"Página web que muestra mi portafolio personal usando las tecnologías Reflex y Python."}
+                    name={"Portfolio Web con Reflex"}
+                    ico={"/reflex.ico"}
+                    span={"md:col-span-1"}
+                    image={"src/assets/imgs/portfolio-reflex-img.webp"}
+                    // background={reflexBackground}
+                />
+                <Project
+                    url={"https://github.com/bryanvivancos/control-asist"}
+                    skillName={"Python, Django y SQL"}
+                    description={"Control de asistencias para empresas con Python, Django, SQL Server."}
+                    name={"Assist Control"}
+                    skill={"django"}
+                    span={"md:col-span-1"}
+                    image={"src/assets/imgs/assist-control-img.webp"}
+                    // background={djangoBackground}
+                />
+                <Project
+                    url={"https://github.com/bryanvivancos/album_project"}
+                    skillName={"Python, Reflex y Supabase"}
+                    description={"Plataforma con CRUD completo, muestra un catálogo de items con backend en SUPABASE."}
+                    name={"Album/Catalog"}
+                    ico={"/reflex.ico"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/album-reflex-img.webp"}
+                    // background={reflexBackground}
+                />
+                <Project
+                    url={"https://github.com/bryanvivancos/mj-awards-webscrapping"}
+                    skillName={"Python"}
+                    description={"Haciendo web scrapping de la página de los premios un cantante en wikipedia."}
+                    name={"Web Scrapping con Python"}
+                    skill={"python"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/web-scrapping-img.webp"}
+                    // background={reactBackground}
+                 />
+                {/* <Project
+                    url={"https://github.com/bryanvivancos/backend_exercise_py"}
+                    skillName={"Python, FastAPI y MongoDB"}
+                    name={"Python Backend"}
+                    skill={"mongodb"}
+                    span={"md:col-span-1"}
+                    image={"src/assets/imgs/business-card.webp"}
+                    // background={djangoBackground}
+                /> */}
+                {/* <Project
+                    url={"https://github.com/bryanvivancos/python_crash_course/tree/main/generating_data/chapter_15"}
+                    skillName={"Python"}
+                    name={"Generador de Datos"}
+                    skill={"python"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/business-card.webp"}
+                    // background={pythonBackground}
+                /> */}
+                {/* <Project
+                    url={"https://github.com/bryanvivancos/x_FollowCard"}
+                    skillName={"React y Javascript"}
+                    description={"Plantilla simple de Seguir/Dejar de seguir de X."}
+                    name={"Follow Card de X"}
+                    skill={"react"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/business-card.webp"}
+                    // background={reactBackground}
+                /> */}
             </div>
         ),
         clientes: (
             <div>
                 <Project
-                url={"https://catquiz-card.vercel.app/"}
-                skillName={"React, Typescript, Tailwind CSS y Strapi"}
-                description={"Tarjeta digital para Joyeria"}
-                name={"CatQuiz - Business Card"}
-                skill={"react"}
-                span={"md:col-span-2"}
-                // background={reactBackground}
-            />
+                    url={"https://catquiz-card.vercel.app/"}
+                    skillName={"React, Typescript, Tailwind CSS y Strapi"}
+                    description={"Tarjeta digital para Joyeria"}
+                    name={"CatQuiz - Business Card"}
+                    skill={"react"}
+                    span={"md:col-span-2"}
+                    image={"src/assets/imgs/catquiz-card-img.webp"}
+                    // background={reactBackground}
+                />
                 <Project
                     url={"https://catquizpe.vercel.app/"}
                     skillName={"React, Javascript y Tailwind CSS"}
@@ -135,17 +146,19 @@ const ProjectsTab = () => {
                     name={"CatQuiz - Link Bio"}
                     skill={"react"}
                     span={"md:col-span-2"}
+                    image={"src/assets/imgs/catquiz-linkbio-img.webp"}
                     // background={reactBackground}
                 />
                 <Project
-                url={"https://github.com/bryanvivancos/formularioweb_a_pdf"}
-                skillName={"Python"}
-                description={"Plantilla web tipo formulario que pasa las respuestas a un documento Word."}
-                name={"Formulario Web a Word"}
-                skill={"python"}
-                span={"md:col-span-1"}
-                // background={pythonBackground}
-            />
+                    url={"https://github.com/bryanvivancos/formularioweb_a_pdf"}
+                    skillName={"Python"}
+                    description={"Plantilla web tipo formulario que pasa las respuestas a un documento Word."}
+                    name={"Formulario Web a Word"}
+                    skill={"python"}
+                    span={"md:col-span-1"}
+                    image={"src/assets/imgs/formulario-web-word-img.webp"}
+                    // background={pythonBackground}
+                />
             </div>
         )
     }
