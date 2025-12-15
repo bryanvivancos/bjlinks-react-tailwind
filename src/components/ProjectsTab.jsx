@@ -24,7 +24,7 @@ const ProjectsTab = () => {
                     name={"Vincode.dev"}
                     skill={"react"}
                     span={"md:col-span-2"}
-                    image={"src/assets/imgs/vincode-img.webp"}
+                    image={"/imgs/vincode-img.webp"}
                     // background={reactBackground}
                 />
                 <Project
@@ -34,7 +34,7 @@ const ProjectsTab = () => {
                     name={"Tarjeta Digital Profesional"}
                     skill={"react"}
                     span={"md:col-span-2"}
-                    image={"src/assets/imgs/bj-card-img.webp"}
+                    image={"/imgs/bj-card-img.webp"}
                     // background={reactBackground}
                 />
                 <Project
@@ -44,7 +44,7 @@ const ProjectsTab = () => {
                     name={"Quizter App"}
                     skill={"react"}
                     span={"md:col-span-2"}
-                    image={"src/assets/imgs/quizter-img.webp"}
+                    image={"/imgs/quizter-img.webp"}
                     // background={reactBackground}
                 />
                 <Project
@@ -54,7 +54,7 @@ const ProjectsTab = () => {
                     name={"Randomizer App"}
                     skill={"react"}
                     span={"md:col-span-2"}
-                    image={"src/assets/imgs/randomizer-img.webp"}
+                    image={"/imgs/randomizer-img.webp"}
                     // background={reactBackground}
                 />
                 <Project
@@ -64,7 +64,7 @@ const ProjectsTab = () => {
                     name={"Portfolio Web con Reflex"}
                     ico={"/reflex.ico"}
                     span={"md:col-span-1"}
-                    image={"src/assets/imgs/portfolio-reflex-img.webp"}
+                    image={"/imgs/portfolio-reflex-img.webp"}
                     // background={reflexBackground}
                 />
                 <Project
@@ -74,7 +74,7 @@ const ProjectsTab = () => {
                     name={"Assist Control"}
                     skill={"django"}
                     span={"md:col-span-1"}
-                    image={"src/assets/imgs/assist-control-img.webp"}
+                    image={"/imgs/assist-control-img.webp"}
                     // background={djangoBackground}
                 />
                 <Project
@@ -84,7 +84,7 @@ const ProjectsTab = () => {
                     name={"Album/Catalog"}
                     ico={"/reflex.ico"}
                     span={"md:col-span-2"}
-                    image={"src/assets/imgs/album-reflex-img.webp"}
+                    image={"/imgs/album-reflex-img.webp"}
                     // background={reflexBackground}
                 />
                 <Project
@@ -94,7 +94,7 @@ const ProjectsTab = () => {
                     name={"Web Scrapping con Python"}
                     skill={"python"}
                     span={"md:col-span-2"}
-                    image={"src/assets/imgs/web-scrapping-img.webp"}
+                    image={"/imgs/web-scrapping-img.webp"}
                     // background={reactBackground}
                  />
                 {/* <Project
@@ -136,7 +136,7 @@ const ProjectsTab = () => {
                     name={"CatQuiz - Business Card"}
                     skill={"react"}
                     span={"md:col-span-2"}
-                    image={"src/assets/imgs/catquiz-card-img.webp"}
+                    image={"/imgs/catquiz-card-img.webp"}
                     // background={reactBackground}
                 />
                 <Project
@@ -146,7 +146,7 @@ const ProjectsTab = () => {
                     name={"CatQuiz - Link Bio"}
                     skill={"react"}
                     span={"md:col-span-2"}
-                    image={"src/assets/imgs/catquiz-linkbio-img.webp"}
+                    image={"/imgs/catquiz-linkbio-img.webp"}
                     // background={reactBackground}
                 />
                 <Project
@@ -156,7 +156,7 @@ const ProjectsTab = () => {
                     name={"Formulario Web a Word"}
                     skill={"python"}
                     span={"md:col-span-1"}
-                    image={"src/assets/imgs/formulario-web-word-img.webp"}
+                    image={"/imgs/formulario-web-word-img.webp"}
                     // background={pythonBackground}
                 />
             </div>
