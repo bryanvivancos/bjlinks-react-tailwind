@@ -7,7 +7,7 @@ const Project = ({ url, skillName, description, name, skill, ico, span, image })
         <a href={url} 
         target="_blank" 
         aria-label={`Proyecto de ${skill}`}
-        className={`flex items-start hover:scale-105 hover:contrast-125 transition col-span-1 ${span} group p-2`}>
+        className={`flex items-start hover:scale-105 hover:contrast-125 transition col-span-1 ${span} group py-2`}>
 
             <div className={`w-2/3 relative overflow-hidden flex flex-col md:border-y-3 md:border-l-3 border-y-2 border-l-2 border-green-900 rounded-bl-2xl rounded-tl-2xl p-1.5 px-2.5 md:p-1.5 md:px-2 h-32 justify-between`}>
 
@@ -19,7 +19,7 @@ const Project = ({ url, skillName, description, name, skill, ico, span, image })
                 >{ description }</p>
 
                 <div className='flex gap-2 items-center w-full my-1'>
-                    <span className='md:text-xs text-[8px] border px-1.5 rounded-lg py-0.5 z-10 text-white'>
+                    <span className='sm:text-xs text-[8px] rounded-lg py-0.5 z-10 text-white'>
                         {skillName}
                     </span>
                     {/* <svg width="32" height="32" 

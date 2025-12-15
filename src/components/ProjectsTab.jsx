@@ -178,7 +178,7 @@ const ProjectsTab = () => {
                 ))}
             </div>
 
-            <div className='my-4 gap-2'>
+            <div className=''>
                 {contents[activeTab]}
             </div>
         </div>
