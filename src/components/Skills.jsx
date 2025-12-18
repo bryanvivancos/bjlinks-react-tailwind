@@ -9,6 +9,14 @@ const Skills = () => {
         <div className='flex flex-wrap justify-center gap-4'>
 
             <SkillItem 
+                url={"https://astro.build/"}
+                skill={"astro"}
+            />
+            <SkillItem 
+                url={"https://nextjs.org/"}
+                skill={"nextjs"}
+            />
+            <SkillItem 
                 url={"https://react.dev/"}
                 skill={"react"}
             />
@@ -60,10 +68,6 @@ const Skills = () => {
             <SkillItem 
                 url={"https://nodejs.org/es"}
                 skill={"nodejs"}
-            />
-            <SkillItem 
-                url={"https://nextjs.org/"}
-                skill={"nextjs"}
             />
             <SkillItem 
                 url={"https://zustand-demo.pmnd.rs/"}
