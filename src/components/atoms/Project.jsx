@@ -9,9 +9,9 @@ const Project = ({ url, skillName, description, name, skill, ico, span, image })
         aria-label={`Proyecto de ${skill}`}
         className={`flex items-start hover:scale-105 hover:contrast-125 transition col-span-1 ${span} group py-2`}>
 
-            <div className={`w-2/3 relative overflow-hidden flex flex-col md:border-y-3 md:border-l-3 border-y-2 border-l-2 border-green-900 rounded-bl-2xl rounded-tl-2xl p-1.5 px-2.5 md:p-1.5 md:px-2 h-32 justify-between`}>
+            <div className={`w-2/3 relative overflow-hidden flex flex-col md:border-y-3 md:border-l-3 border-y-2 border-l-2 border-green-900 rounded-bl-2xl rounded-tl-2xl py-1.5 px-2.5 md:py-1.5 md:px-2 h-32 justify-between`}>
 
-                <span className='font-semibold md:text-lg text-base z-10 text-white text flex my-1'>
+                <span className='font-semibold md:text-base text-sm z-10 text-white text flex my-1 leading-none'>
                     {name} 
                 </span>
             
@@ -45,7 +45,7 @@ const Project = ({ url, skillName, description, name, skill, ico, span, image })
                 <img 
                     src={`${image}`} 
                     alt="imagen de proyecto" 
-                    className='h-full object-cover'
+                    className='h-full w-full object-cover'
                 />
 
                 <svg width="32" height="32" 

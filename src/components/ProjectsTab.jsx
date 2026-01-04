@@ -28,6 +28,16 @@ const ProjectsTab = () => {
                     // background={reactBackground}
                 />
                 <Project
+                    url={"https://vincode.dev/services/vin-display"}
+                    skillName={"React, Typescript y Tailwind CSS"}
+                    description={"Software de cartelería digital para negocios que desean gestionar su publicidad, menús y promociones de forma dinámica."}
+                    name={"VIN DISPLAY - Software de Cartelería Digital y Menús Dinámicos"}
+                    skill={"react"}
+                    span={"md:col-span-2"}
+                    image={"/imgs/vin-display.webp"}
+                    // background={reactBackground}
+                />
+                <Project
                     url={"https://bryanvivancosbusiness.vercel.app/"}
                     skillName={"React, Typescript y Strapi"}
                     description={"Impulsa tu presencia profesional con una tarjeta digital personalizada que reúne todos tus datos de contacto."}
