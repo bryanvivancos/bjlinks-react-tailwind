@@ -20,7 +20,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://vincode.dev"}
                     skillName={"React, Typescript y Tailwind CSS"}
-                    description={"Startup de desarrollo de software que ofrece soluciones personalizadas para empresas e independientes."}
+                    description={"Mi Startup de desarrollo de software que ofrece soluciones personalizadas para empresas e independientes."}
                     name={"Vincode.dev"}
                     skill={"react"}
                     span={"md:col-span-2"}
