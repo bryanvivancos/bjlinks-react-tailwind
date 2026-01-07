@@ -28,16 +28,6 @@ const ProjectsTab = () => {
                     // background={reactBackground}
                 />
                 <Project
-                    url={"https://vincode.dev/services/vin-display"}
-                    skillName={"React, Typescript y Tailwind CSS"}
-                    description={"Software de cartelería digital para negocios que desean gestionar su publicidad, menús y promociones de forma dinámica."}
-                    name={"VIN DISPLAY - Software de Cartelería Digital y Menús Dinámicos"}
-                    skill={"react"}
-                    span={"md:col-span-2"}
-                    image={"/imgs/vin-display.webp"}
-                    // background={reactBackground}
-                />
-                <Project
                     url={"https://bryanvivancosbusiness.vercel.app/"}
                     skillName={"React, Typescript y Strapi"}
                     description={"Impulsa tu presencia profesional con una tarjeta digital personalizada que reúne todos tus datos de contacto."}
@@ -66,16 +56,6 @@ const ProjectsTab = () => {
                     span={"md:col-span-2"}
                     image={"/imgs/randomizer-img.webp"}
                     // background={reactBackground}
-                />
-                <Project
-                    url={"https://bryanvivancos.vercel.app/"}
-                    skillName={"Python y Reflex"}
-                    description={"Página web que muestra mi portafolio personal usando las tecnologías Reflex y Python."}
-                    name={"Portfolio Web con Reflex"}
-                    ico={"/reflex.ico"}
-                    span={"md:col-span-1"}
-                    image={"/imgs/portfolio-reflex-img.webp"}
-                    // background={reflexBackground}
                 />
                 <Project
                     url={"https://github.com/bryanvivancos/control-asist"}
@@ -108,6 +88,16 @@ const ProjectsTab = () => {
                     // background={reactBackground}
                  />
                 {/* <Project
+                    url={"https://bryanvivancos.vercel.app/"}
+                    skillName={"Python y Reflex"}
+                    description={"Página web que muestra mi portafolio personal usando las tecnologías Reflex y Python."}
+                    name={"Portfolio Web con Reflex"}
+                    ico={"/reflex.ico"}
+                    span={"md:col-span-1"}
+                    image={"/imgs/portfolio-reflex-img.webp"}
+                    // background={reflexBackground}
+                /> */}
+                {/* <Project
                     url={"https://github.com/bryanvivancos/backend_exercise_py"}
                     skillName={"Python, FastAPI y MongoDB"}
                     name={"Python Backend"}
@@ -139,6 +129,16 @@ const ProjectsTab = () => {
         ),
         clientes: (
             <div>
+                <Project
+                    url={"https://vincode.dev/services/vin-display"}
+                    skillName={"React, Typescript y Tailwind CSS"}
+                    description={"Software de cartelería digital para negocios que desean gestionar su publicidad, menús y promociones de forma dinámica."}
+                    name={"VIN DISPLAY - Software de Cartelería Digital y Menús Dinámicos"}
+                    skill={"react"}
+                    span={"md:col-span-2"}
+                    image={"/imgs/vin-display.webp"}
+                    // background={reactBackground}
+                />
                 <Project
                     url={"https://catquiz-card.vercel.app/"}
                     skillName={"React, Typescript, Tailwind CSS y Strapi"}
