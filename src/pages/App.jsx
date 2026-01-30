@@ -13,13 +13,17 @@ import { DESCRIPTION } from '../CONTANTS.js'
 function App() {
 
   return (
-    <div className='grid grid-rows-[auto_1fr_auto] min-h-dvh justify-center items-center max-w-2xl  mx-6'>
+    <div className='grid grid-rows-[auto_1fr_auto] min-h-dvh justify-center items-center max-w-5xl  mx-6'>
 
-      <Header/>
-      <main>
-        <Socials/>
-        <p className='text-balance text-white font-Quick text-center mb-8'> {DESCRIPTION}</p>
-        <Skills/>
+      <main className='mt-8'>
+        <section className='flex max-md:flex-col items-center'>
+          <Header/>
+          <Socials/>
+          <div className='flex flex-col max-w-md px-4 place-content-center w-full'>
+            <p className='text-balance text-white font-Quick text-center mb-8'> {DESCRIPTION}</p>
+            <Skills/>
+          </div>
+        </section>
         <Resume/>
         <ProjectsTab/>
         <Certificates/>

@@ -21,4 +21,19 @@
     --color-morado-ig: rgba(152, 16, 250, 1);
 
     --font-Quick: "Quicksand", system-ui, sans-serif;
+
+    --animate-skills-left-spin: skills-left-spin 10s linear infinite ;
+    --animate-skills-right-spin: skills-right-spin 10s linear infinite;
+
+    @keyframes skills-left-spin {
+        from {transform: translateX(0)}
+        to {transform: translateX(calc(-50%)) }
+    }
+
+    @keyframes skills-right-spin {
+        from {transform: translateX(-50%)}
+        to {transform: translateX(0)}
+    }
+
 }
+
