@@ -14,10 +14,53 @@
     <meta property="og:image" content="/IMG-20230911-WA0113.webp">
     <meta property="og:url" content="https://bryanvivancos.netlify.app/">
     <meta name="twitter:card" content="summary_large_image">
-
   </head>
-  <body class="flex justify-center bg-gradient-to-b from-black via-emerald-950 to-gray-800 mx-auto min-h-dvh">
+
+  <body class="flex justify-center bg-gradient-to-b from-black via-gray-900 to-gray-900 mx-auto min-h-dvh">
+
+    <div id="stars"></div>
     <div id="root"></div>
+
+    <script >
+      document.addEventListener("DOMContentLoaded",function(){
+    
+          const stars = document.getElementById("stars");
+
+          setInterval(createStar,100);
+            // Esto controla la cantidad de estrellas
+            // 100 → ~10 estrellas por segundo
+            // 50 → ~20 estrellas por segundo
+            // 20 → ~50 estrellas por segundo - cuidado rendimiento
+
+          function createStar(){
+              let right=Math.random()*500; //La estrella empieza un poco fuera o cerca del borde derecho.
+
+              let docHeight = document.documentElement.scrollHeight;
+              let top=Math.random()*docHeight; //Las estrellas aparecen en toda la altura del documento
+
+              let star=document.createElement("div");
+              star.classList.add("star")
+              stars.appendChild(star); //se crea un div nuevo con la clase 'star'
+
+              // setInterval(runStar,10);
+              star.style.top=top+"px";
+              star.style.right = right + "px"; //posiciona la estrella
+
+              let interval = setInterval(runStar, 10);
+
+              function runStar() {
+                if (right >= window.innerWidth + 50) {
+                  clearInterval(interval);
+                  star.remove(); //elimina la estrella del DOM cuando sale de la pantalla
+                }
+                // right += 3;
+                right += 1.5; //velocidad de la estrellas
+                star.style.right = right + "px";
+              }
+          } 
+      })
+    </script>
     <script type="module" src="/src/main.jsx"></script>
+
   </body>
 </html>

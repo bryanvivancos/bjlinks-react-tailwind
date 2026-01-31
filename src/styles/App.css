@@ -3,8 +3,7 @@
 
 @font-face {
     font-family: "Quicksand";
-    src: url("/Quicksand-VariableFont_wght.woff2")
-        format("woff2");
+    src: url("/Quicksand-VariableFont_wght.woff2") format("woff2");
     font-style: normal;
     font-weight: 100 700;
     font-display: swap;
@@ -21,4 +20,64 @@
     --color-morado-ig: rgba(152, 16, 250, 1);
 
     --font-Quick: "Quicksand", system-ui, sans-serif;
+
+    --animate-skills-left-spin: skills-left-spin 10s linear infinite;
+    --animate-skills-right-spin: skills-right-spin 10s linear infinite;
+
+    @keyframes skills-left-spin {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(calc(-50%));
+        }
+    }
+
+    @keyframes skills-right-spin {
+        from {
+            transform: translateX(-50%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+}
+
+#stars {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#root {
+    position: relative;
+    z-index: 10;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    /* right: 0; */
+    animation: starTwinkle 10s infinite linear;
+}
+
+@keyframes starTwinkle {
+    0% {
+        background: rgba(255, 255, 255, 0.4);
+    }
+    25% {
+        background: rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        background: rgba(255, 255, 255, 1);
+    }
+    75% {
+        background: rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.4);
+    }
 }

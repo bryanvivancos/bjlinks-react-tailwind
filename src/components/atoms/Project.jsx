@@ -7,9 +7,11 @@ const Project = ({ url, skillName, description, name, skill, ico, span, image })
         <a href={url} 
         target="_blank" 
         aria-label={`Proyecto de ${skill}`}
-        className={`flex items-start hover:scale-105 hover:contrast-125 transition col-span-1 ${span} group py-2`}>
+        className={`flex items-start hover:scale-105 hover:contrast-125 transition-all duration-300 ease-in-out col-span-1 ${span} group py-2
+        timeline-view animate-zoom-in animate-range-[entry_5%_contain_10%]
+        `}>
 
-            <div className={`w-2/3 relative overflow-hidden flex flex-col md:border-y-3 md:border-l-3 border-y-2 border-l-2 border-green-900 rounded-bl-2xl rounded-tl-2xl py-1.5 px-2.5 md:py-1.5 md:px-2 h-32 justify-between`}>
+            <div className={`w-2/3 relative overflow-hidden flex flex-col md:border-y-3 md:border-l-3 border-y-2 border-l-2 border-green-950 group-hover:border-green-800 transition-all duration-300 ease-in-out rounded-bl-2xl rounded-tl-2xl py-1.5 px-2.5 md:py-1.5 md:px-2 h-36 justify-between`}>
 
                 <span className='font-semibold md:text-base text-sm z-10 text-white text flex my-1 leading-none'>
                     {name} 
@@ -40,7 +42,9 @@ const Project = ({ url, skillName, description, name, skill, ico, span, image })
                 }
             </div>
                 
-            <div className='w-1/3 h-32 rounded-tr-2xl rounded-br-2xl overflow-hidden relative'>
+            <div className='w-1/3 h-36 rounded-tr-2xl rounded-br-2xl overflow-hidden relative 
+           
+            '>
                 <div className='md:hidden group-hover:block absolute inset-0 bg-gradient-to-t from-black/35 to-transparent'/>
                 <img 
                     src={`${image}`} 
