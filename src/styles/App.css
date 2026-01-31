@@ -43,9 +43,16 @@
     }
 }
 
-body {
+#stars {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+#root {
     position: relative;
-    overflow-x: hidden;
+    z-index: 10;
 }
 
 .star {
@@ -53,7 +60,7 @@ body {
     width: 2px;
     height: 2px;
     background: #fff;
-    right: 0;
+    /* right: 0; */
     animation: starTwinkle 10s infinite linear;
 }
 

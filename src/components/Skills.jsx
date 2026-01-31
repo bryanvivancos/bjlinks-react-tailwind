@@ -2,7 +2,7 @@ import '../styles/App.css'
 import SkillItem from './atoms/SkillItem'
 
 const Skills = () => {
-    return <div id='skills' className='mb-8 z-50 overflow-hidden space-y-2 md:max-w-xl max-md:max-w-md max-sm:w-[360px]
+    return <div id='skills' className='mb-8 pt-8 z-50 overflow-hidden space-y-2 md:max-w-xl max-md:max-w-md max-sm:w-[360px]
     [mask-image:linear-gradient(to_right,transparent,black_20%,black_90%,transparent)]
     [-webkit-mask-image:linear-gradient(to_right,transparent,black_20%,black_90%,transparent)]
     '>

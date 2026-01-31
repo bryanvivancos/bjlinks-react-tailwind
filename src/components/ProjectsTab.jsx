@@ -174,7 +174,7 @@ const ProjectsTab = () => {
     }
 
     return (
-        <div id='projectstab' className='mb-8 w-full'>
+        <div id='projectstab' className='mb-8 pt-8 w-full'>
             <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Proyectos</h2>
 
             <div className="flex flex-wrap justify-around border-b mb-8">

@@ -80,7 +80,7 @@ const Certificates = () => {
 
 
     
-    return <div id="certificates" className="mb-8 font-Quick text-white w-full">
+    return <div id="certificates" className="mb-8 pt-8 font-Quick text-white w-full">
         <h2 className="flex justify-center mb-4 text-xl font-bold font-Quick">
             Certificados
         </h2>
