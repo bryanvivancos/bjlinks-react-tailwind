@@ -4,7 +4,7 @@ import sprite from '../../assets/sprite.svg'
 const SocialIcon = ({ url, social, bg}) => {
     const UpperSocial = social.charAt(0).toUpperCase() + social.slice(1)
 
-    return <a className={`${bg} p-2 size-10 md:size-14 flex items-center justify-center rounded-full hover:scale-120 transition-transform`} 
+    return <a className={`${bg} p-2 size-8 md:size-10 flex items-center justify-center rounded-full hover:scale-120 transition-transform`} 
         href={url}
         target="_blank" aria-label={`${social}`} title={`Ir a ${UpperSocial} de Bryan`}
         >

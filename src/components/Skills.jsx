@@ -2,7 +2,7 @@ import '../styles/App.css'
 import SkillItem from './atoms/SkillItem'
 
 const Skills = () => {
-    return <div id='skills' className='mb-8 z-50 overflow-hidden space-y-2 
+    return <div id='skills' className='mb-8 z-50 overflow-hidden space-y-2 md:max-w-xl max-md:max-w-md max-sm:w-[360px]
     [mask-image:linear-gradient(to_right,transparent,black_20%,black_90%,transparent)]
     [-webkit-mask-image:linear-gradient(to_right,transparent,black_20%,black_90%,transparent)]
     '>
@@ -14,7 +14,7 @@ const Skills = () => {
             animate-skills-left-spin 
             whitespace-nowrap 
             will-change-transform 
-            gap-2
+            gap-0
             hover:[animation-play-state:paused]'>
             <div className='flex justify-center gap-4'>
                 <SkillItem 
@@ -54,7 +54,7 @@ const Skills = () => {
                     skill={"django"}
                 />
             </div>
-            <div aria-hidden className='flex justify-center gap-4'>
+            <div aria-hidden className='flex justify-center gap-0'>
                 <SkillItem 
                     url={"https://astro.build/"}
                     skill={"astro"}
@@ -102,7 +102,7 @@ const Skills = () => {
             animate-skills-right-spin 
             whitespace-nowrap 
             will-change-transform 
-            gap-2
+            gap-0
             hover:[animation-play-state:paused]'>
             <div aria-hidden className='flex justify-center gap-4'>
                 <SkillItem 
@@ -145,7 +145,7 @@ const Skills = () => {
                 />
             </div>
 
-            <div className='flex justify-center gap-4'>            
+            <div className='flex justify-center gap-0'>            
                 <SkillItem 
                     url={"https://reflex.dev/"}
                     skill={"reflex"}

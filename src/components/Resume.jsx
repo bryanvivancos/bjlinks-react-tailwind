@@ -9,11 +9,11 @@ const Resume = () => {
         <div className="flex flex-row justify-center gap-8">
 
             <div className='flex flex-col items-center gap-2'>
-                <a className={`bg-emerald-900 p-2 size-12 md:size-18 flex flex-col justify-center rounded-full hover:scale-130 transition-transform gap-4 items-center`} 
+                <a className={`bg-emerald-900 p-2 size-10 md:size-14 flex flex-col justify-center rounded-full hover:scale-130 transition-transform gap-4 items-center`} 
                     href="https://docs.google.com/document/d/1COvjcCJE4GXUlkkSa9U6CrofLQPBkKWM/edit?usp=sharing&ouid=117976139180001148882&rtpof=true&sd=true"
                     target="_blank" aria-label={`cv`} title={`Ir a CV de Bryan`}
                     >
-                        <svg width="40" height="40">
+                        <svg width="30" height="30">
                             <use href={`${sprite}#cv`}/>
                         </svg>
                 </a>
@@ -21,11 +21,11 @@ const Resume = () => {
             </div>
 
             <div className='flex flex-col items-center gap-2'>
-                <a className={`bg-emerald-900 p-2 size-12 md:size-18 flex flex-col justify-center rounded-full hover:scale-130 transition-transform gap-4 items-center`} 
+                <a className={`bg-emerald-900 p-2 size-10 md:size-14 flex flex-col justify-center rounded-full hover:scale-130 transition-transform gap-4 items-center`} 
                     href="https://docs.google.com/document/d/1-HQzm3XRZhPyWru5ViaSeCmuRuVj-9RO/edit?usp=sharing&ouid=117976139180001148882&rtpof=true&sd=true"
                     target="_blank" aria-label={`cv`} title={`Go to Bryan's Resume`}
                     >
-                        <svg width="40" height="40">
+                        <svg width="30" height="30">
                             <use href={`${sprite}#cv`}/>
                         </svg>
                 </a>

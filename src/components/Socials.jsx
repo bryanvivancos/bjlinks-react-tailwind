@@ -3,7 +3,7 @@ import SocialIcon from './atoms/SocialIcon'
 import {LINKEDIN, GITHUB, MAIL, INSTAGRAM} from '../CONTANTS'
 
 const Socials = () => {
-    return <div className='flex max-md:flex-wrap md:flex-col gap-4 mb-8 justify-center'>
+    return <div className='flex my-4 gap-4 justify-center'>
         <SocialIcon
             bg={"bg-fondo-linkedin"}
             url={LINKEDIN}
