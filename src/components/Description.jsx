@@ -2,7 +2,7 @@ import Socials from '../components/Socials.jsx'
 
 export const Description = () => {
     return (
-        <div className='flex flex-col px-4 place-content-center'>
+        <div className='flex flex-col px-4 place-content-center animate-slide-in-top'>
             <h1 className='text-3xl font-extrabold text-white leading-tight mt-1 font-Quick text-center'>
                 Bryan Vivanco Silva
             </h1>
