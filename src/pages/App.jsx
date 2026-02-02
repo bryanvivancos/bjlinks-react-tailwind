@@ -22,7 +22,7 @@ function App() {
           </div>
           <Description/>
         </div>
-        <p className='text-balance text-white font-Quick text-center my-4'> {DESCRIPTION}</p>
+        <p className='text-balance text-white font-Quick text-center my-4 animate-slide-in-top'> {DESCRIPTION}</p>
         <Skills/>
         <Resume/>
         <ProjectsTab/>
