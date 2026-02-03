@@ -5,7 +5,9 @@ const Footer = () => {
     const year = new Date().getFullYear()
 
     return (
-        <footer className="text-white font-Quick flex flex-col items-center justify-center gap-0 mb-4 mt-14">
+        <footer className="text-white font-Quick flex flex-col items-center justify-center gap-0 mb-10 mt-8 
+        timeline-view animate-fade-in-up animate-range-[entry_5%_contain_15%]
+        ">
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="flex flex-col items-center justify-center gap-4">
@@ -18,7 +20,7 @@ const Footer = () => {
                     </p>
                 </div>
                 <div className="flex flex-col items-center gap-2">
-                    <h3 className= "font-bold">Enlaces de interes</h3>
+                    <h3 className= "font-bold">Enlaces de interés</h3>
                     
                     <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className= "hover:text-emerald-300 text-xs flex gap-2">
                         <svg className="group-hover:animate-slide-in-left size-4 text-white">

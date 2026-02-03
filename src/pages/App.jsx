@@ -15,14 +15,18 @@ function App() {
   return (
     <div className='grid grid-rows-[auto_1fr_auto] min-h-dvh justify-center items-center max-w-xl mx-auto px-4'>
 
-      <main className='place-items-center my-8'>
-        <div className='md:grid md:grid-cols-2 max-md:flex max-md:flex-col items-center w-full justify-center gap-2'>
+      <main className='place-items-center mt-8'>
+        <div className='md:grid md:grid-cols-2 max-md:flex max-md:flex-col items-center w-full justify-center gap-2
+        timeline-view animate-fade-out-up animate-range-exit
+        '>
           <div className='flex max-md:flex-col justify-center'>
             <Header/>
           </div>
           <Description/>
         </div>
-        <p className='text-balance text-white font-Quick text-center my-4 animate-slide-in-top'> {DESCRIPTION}</p>
+        <p className='text-balance text-white font-Quick text-center my-4
+        timeline-view animate-fade-out-up animate-range-[cover_70%]
+        '> {DESCRIPTION}</p>
         <Skills/>
         <Resume/>
         <ProjectsTab/>
