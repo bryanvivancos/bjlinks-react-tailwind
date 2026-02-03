@@ -24,9 +24,13 @@ function App() {
           </div>
           <Description/>
         </div>
-        <p className='text-balance text-white font-Quick text-center my-4
+        <div className='text-balance text-white font-Quick text-center my-4
         timeline-view animate-fade-out-up animate-range-[cover_70%]
-        '> {DESCRIPTION}</p>
+        '> 
+          <p className='animate-slide-in-top'>
+            {DESCRIPTION}
+          </p>
+        </div>
         <Skills/>
         <Resume/>
         <ProjectsTab/>
