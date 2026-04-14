@@ -174,13 +174,24 @@ const ProjectsTab = () => {
     }
 
     return (
-        <div id='projectstab' className='mb-8 pt-8 w-full'>
-            <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Proyectos</h2>
+        <section id='projectstab' className='w-full py-16 md:py-24'>
+            <div className='flex flex-col items-center gap-4 mb-12'>
+                <div className='inline-flex items-center gap-2'>
+                    <div className='w-12 h-1 bg-accent rounded-full'></div>
+                    <span className='text-text-secondary font-Quick text-sm md:text-base tracking-wide uppercase'>
+                        Portfolio
+                    </span>
+                    <div className='w-12 h-1 bg-accent rounded-full'></div>
+                </div>
+                <h2 className='text-text-primary font-Quick font-black text-3xl md:text-4xl text-center'>
+                    Mis Proyectos
+                </h2>
+            </div>
 
-            <div className="flex flex-wrap justify-around border-b mb-8">
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {tabs.map((tab) => (
                     <button key={tab.id}
-                    className={`px-4 py-2 text-white w-1/2 font-Quick ${activeTab === tab.id ? "border-b-2 border-emerald-900 text-emerald-300" : "hover:text-emerald-300"}`}
+                    className={`px-8 py-3 font-Quick font-semibold rounded-lg transition-all duration-300 ${activeTab === tab.id ? "bg-accent text-text-primary shadow-lg" : "bg-bg-card text-text-secondary hover:bg-bg-card-hover border border-border"}`}
                     onClick={() => setActiveTab(tab.id)} 
                     >
                         {tab.label}
@@ -188,10 +199,10 @@ const ProjectsTab = () => {
                 ))}
             </div>
 
-            <div className=''>
+            <div className='mt-12'>
                 {contents[activeTab]}
             </div>
-        </div>
+        </section>
     );
 }
 

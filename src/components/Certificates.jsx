@@ -80,12 +80,21 @@ const Certificates = () => {
 
 
     
-    return <div id="certificates" className="mb-8 pt-8 font-Quick text-white w-full">
-        <h2 className="flex justify-center mb-4 text-xl font-bold font-Quick">
-            Certificados
-        </h2>
+    return <section id="certificates" className="w-full py-16 md:py-24 font-Quick text-text-primary">
+        <div className='flex flex-col items-center gap-4 mb-12'>
+            <div className='inline-flex items-center gap-2'>
+                <div className='w-12 h-1 bg-accent rounded-full'></div>
+                <span className='text-text-secondary font-Quick text-sm md:text-base tracking-wide uppercase'>
+                    Formación
+                </span>
+                <div className='w-12 h-1 bg-accent rounded-full'></div>
+            </div>
+            <h2 className="text-text-primary font-Quick font-black text-3xl md:text-4xl text-center">
+                Certificaciones
+            </h2>
+        </div>
 
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-4">
 
             {
                 certificates.map((certificate, index) => {
@@ -178,7 +187,7 @@ const Certificates = () => {
                 course="Más certificados..." /> */}
 
         </div>
-    </div>
+    </section>
 }
 
 export default Certificates

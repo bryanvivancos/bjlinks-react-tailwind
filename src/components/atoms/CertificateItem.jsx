@@ -14,7 +14,7 @@ const CertificateItem = ({ url, logo, ico, from, course}) => {
                     <use href={`${sprite}#${logo}`}/>
                 </svg>) 
             }
-            <div className={`flex flex-col rounded-3xl px-4 py-1 w-full text-slate-200 bg-[#056559] border border-[#056559] group-hover:animate-slide-in-right transition-all duration-300 ease-in-out`}>
+            <div className={`flex flex-col rounded-3xl px-4 py-1 w-full text-text-secondary bg-certificate-bg border border-certificate-border group-hover:animate-slide-in-right transition-all duration-300 ease-in-out`}>
                 <span className='flex-start text-sm text-balance'>{from}</span>
                 
                 <div className=' flex flex-end justify-between gap-2 items-center w-full'>
