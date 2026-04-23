@@ -1,4 +1,5 @@
 import Navbar from './Navbar'
+import TiltImage from './atoms/TiltImage'
 
 const Hero = () => {
     return (
@@ -8,7 +9,7 @@ const Hero = () => {
 
             {/* Giant Background Text */}
             <div className='absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden'>
-                <h1 className='text-[20vw] md:text-[18vw] font-black tracking-tighter text-white/[0.03] whitespace-nowrap select-none'>
+                <h1 className='text-[20vw] md:text-[18vw] font-black tracking-tighter text-white/[0.04] whitespace-nowrap select-none'>
                     BRYAN VIVANCO
                 </h1>
             </div>
@@ -18,19 +19,18 @@ const Hero = () => {
                 
                 {/* Central Image */}
                 <div className='w-full max-w-[280px] md:max-w-[340px] lg:max-w-[380px] mb-8 md:mb-12'>
-                    <div className='relative aspect-[4/5] rounded-3xl md:rounded-[2rem] overflow-hidden shadow-2xl group'>
-                        <img 
+                    <div className='relative aspect-[4/5] rounded-xl overflow-hidden shadow-2xl group'>
+                        <TiltImage 
                             src='/IMG-20230911-WA0113.webp' 
                             alt='Bryan Vivanco Silva' 
-                            className='w-full h-full object-cover transition-transform duration-500 group-hover:scale-105'
                         />
                     </div>
                 </div>
 
                 {/* Description Text */}
                 <div className='max-w-2xl text-center px-4'>
-                    <p className='text-white/50 text-[10px] md:text-xs tracking-[0.25em] md:tracking-[0.3em] font-light uppercase leading-relaxed'>
-                        AN INDEPENDENT WEB DEVELOPER & ELECTRONIC ENGINEER BASED IN PERU
+                    <p className='text-white/50 text-sm md:text-base tracking-[0.25em] md:tracking-[0.3em] font-light uppercase leading-relaxed'>
+                        Desarrollador Web - Ingeniero Electrónico y de Telecomunicaciones
                     </p>
                 </div>
             </div>

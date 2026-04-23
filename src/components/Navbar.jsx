@@ -62,7 +62,7 @@ const Navbar = () => {
             >
                 {/* Gradient Background */}
                 <div className='absolute inset-0 backdrop-blur-2xl bg-black/40'></div>
-                <div className='absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-orange-500/30'></div>
+                <div className='absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-green-500/30'></div>
 
                 {/* Menu Content */}
                 <div className='relative z-10 flex items-center justify-center min-h-screen'>

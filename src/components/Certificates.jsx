@@ -83,11 +83,11 @@ const Certificates = () => {
     return <section id="certificates" className="w-full py-16 md:py-24 font-Quick text-text-primary">
         <div className='flex flex-col items-center gap-4 mb-12'>
             <div className='inline-flex items-center gap-2'>
-                <div className='w-12 h-1 bg-accent rounded-full'></div>
-                <span className='text-text-secondary font-Quick text-sm md:text-base tracking-wide uppercase'>
+                
+                <span className='text-green-600 tracking-[0.5em] font-bold font-Quick text-sm md:text-base uppercase'>
                     Formación
                 </span>
-                <div className='w-12 h-1 bg-accent rounded-full'></div>
+                
             </div>
             <h2 className="text-text-primary font-Quick font-black text-3xl md:text-4xl text-center">
                 Certificaciones

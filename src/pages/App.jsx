@@ -6,12 +6,13 @@ import Footer from '../components/Footer.jsx'
 import Certificates from '../components/Certificates.jsx'
 import FloatButton from '../components/FloatButton'
 import ProjectsTab from '../components/ProjectsTab.jsx'
+import ProjectsSection from '../components/ProjectsSection.jsx'
 import Resume from '../components/Resume'
 
 function App() {
 
   return (
-    <div className='min-h-dvh bg-bg-primary'>
+    <div className='min-h-dvh bg-black'>
 
       <main>
         <Hero/>
@@ -21,6 +22,7 @@ function App() {
           <Skills/>
           <Resume/>
           <ProjectsTab/>
+          <ProjectsSection/>
           <Certificates/>
         </div>
         
