@@ -16,9 +16,9 @@ const Navbar = () => {
     }, [isOpen])
 
     const menuLinks = [
-        { label: 'HOME', href: '#hero' },
+        { label: 'HOME', href: '#' },
         { label: 'ABOUT ME', href: '#about' },
-        { label: 'PROJECTS', href: '#projectstab' },
+        { label: 'PROJECTS', href: '#projects' },
         { label: 'CONTACT', href: '#contact' }
     ]
 
@@ -31,9 +31,9 @@ const Navbar = () => {
             {/* Fixed Navbar */}
             <nav className='fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-6'>
                 <div className='relative flex items-center justify-between'>
-                    <div className='cursor-pointer hover:text-green-500 transition-all duration-300 text-white text-base md:text-xl tracking-[0.2em] font-light uppercase'>
+                    <a href='#' className='hidden md:block hover:text-green-500 transition-all duration-300 text-white text-base md:text-xl tracking-[0.2em] font-light uppercase'>
                         BRYAN VIVANCO
-                    </div>
+                    </a>
                     
                     <button 
                         onClick={() => setIsOpen(!isOpen)}
@@ -47,7 +47,7 @@ const Navbar = () => {
                     
                     <a 
                         href='#contact' 
-                        className='cursor-pointer hover:text-green-500 transition-all duration-300 text-white text-base md:text-xl tracking-[0.2em] font-light uppercase'
+                        className='hidden md:block cursor-pointer hover:text-green-500 transition-all duration-300 text-white text-base md:text-xl tracking-[0.2em] font-light uppercase'
                     >
                         CONTACT
                     </a>

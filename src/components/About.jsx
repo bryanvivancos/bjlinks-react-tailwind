@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <section id='about' className='relative w-full min-h-screen bg-black overflow-hidden flex items-center justify-center py-20 md:py-32'>
+        <section id='about' className='relative w-full min-h-screen bg-black flex items-center justify-center py-20 md:py-32'>
             
             {/* Gradient Blur Background - Top Left (Blue/Purple) */}
             <div className='absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-blue-600/30 via-brown-600/20 to-transparent blur-[120px] rounded-full'></div>
@@ -14,7 +14,7 @@ const About = () => {
             {/* Content Container */}
             <div className='relative z-10 w-full max-w-5xl mx-auto px-6 md:px-12'>
                 
-                <div className='flex items-center font-Quick justify-center gap-1 mb-8 text-green-600 tracking-[0.5em] font-bold'>ABOUT</div>
+                <div className='pre-header'>ABOUT</div>
 
                 {/* Small Decorative Dots */}
                 {/* <div className='flex items-center justify-center gap-1 mb-8'>

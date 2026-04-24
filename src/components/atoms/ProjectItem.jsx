@@ -7,42 +7,41 @@ const ProjectItem = ({ project, index }) => {
 
     return (
         <div className='w-full max-w-7xl mx-auto py-4 md:py-6'>
-            <div className={`grid md:grid-cols-2 gap-12 md:gap-16 items-center ${isEven ? '' : 'md:grid-flow-dense'}`}>
+        <div className="relative backdrop-blur-xl bg-black/80 rounded-2xl border border-white/10 shadow-[0_20px_80px_rgba(0,0,0,0.6)]">
+            
+            <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center ${isEven ? '' : 'md:grid-flow-dense'} p-6 md:p-10`}>
                 
                 {/* Content Side */}
                 <div className={`flex flex-col gap-6 md:gap-8 ${isEven ? 'md:order-1' : 'md:order-2'} animate-fadeInLeft`}>
                     
                     {/* Badge */}
-                    <div className='inline-flex items-center gap-2 w-fit'>
+                    <div className='inline-flex items-center gap-4 w-fit'>
                         {ico ? (
-                            <img src={ico} alt={skill} className='size-5' />
+                            <img src={ico} alt={skill} className='size-18' />
                         ) : skill ? (
-                            <svg className='size-5 text-green-600'>
+                            <svg className='size-18 text-green-600'>
                                 <use href={`${sprite}#${skill}`} />
                             </svg>
                         ) : null}
-                        <span className='text-green-600 text-xs uppercase tracking-[0.2em] font-bold'>
-                            Featured Project
-                        </span>
+
+                        {/* Title */}
+                        <h3 className='text-white font-medium text-xl md:text-2xl lg:text-3xl leading-tight'>
+                            {name}
+                        </h3>
                     </div>
 
-                    {/* Title */}
-                    <h3 className='text-white font-light text-xl md:text-2xl lg:text-3xl leading-tight'>
-                        {name}
-                    </h3>
-
                     {/* Description */}
-                    <p className='text-white/60 text-lg leading-relaxed max-w-md'>
+                    <p className='text-white/80 text-lg leading-relaxed max-w-md'>
                         {description}
                     </p>
 
                     {/* Stack */}
-                    <div className='flex flex-wrap items-center gap-3 text-white/40 text-lg'>
+                    <div className='flex flex-wrap items-center gap-3 text-white/60 text-lg'>
                         {skillName.split(',').map((tech, idx, arr) => (
                             <span key={idx} className='flex items-center gap-3'>
                                 {tech.trim()}
                                 {idx < arr.length - 1 && (
-                                    <span className='w-1 h-1 rounded-full bg-white/40'></span>
+                                    <span className='w-1 h-1 rounded-full bg-white/60'></span>
                                 )}
                             </span>
                         ))}
@@ -53,7 +52,7 @@ const ProjectItem = ({ project, index }) => {
                         href={url}
                         target='_blank'
                         rel='noopener noreferrer'
-                        className='inline-flex items-center gap-2 text-white hover:text-green-600 text-lg font-medium transition-all duration-300 group w-fit'
+                        className='inline-flex items-center gap-2 text-white hover:text-green-600 text-lg font-medium transition-all duration-300 group w-fit border-3 border-white/30 hover:border-green-600/30 rounded-full px-6 py-2'
                     >
                         <span>View Project</span>
                         <svg className='w-4 h-4 group-hover:translate-x-1 transition-transform' fill='none' stroke='currentColor' viewBox='0 0 24 24'>
@@ -74,6 +73,7 @@ const ProjectItem = ({ project, index }) => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

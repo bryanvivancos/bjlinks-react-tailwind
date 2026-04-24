@@ -77,25 +77,18 @@
 
     --font-family-Quick: "Quicksand", system-ui, sans-serif;
 
-    --animate-skills-left-spin: skills-left-spin 10s linear infinite;
-    --animate-skills-right-spin: skills-right-spin 10s linear infinite;
+    --animate-scroll-left: scroll-left 10s linear infinite;
+    --animate-scroll-right: scroll-right 10s linear infinite;
 
-    @keyframes skills-left-spin {
-        from {
-            transform: translateX(0);
-        }
-        to {
-            transform: translateX(calc(-50%));
-        }
+
+    @keyframes scroll-left {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
     }
 
-    @keyframes skills-right-spin {
-        from {
-            transform: translateX(-50%);
-        }
-        to {
-            transform: translateX(0);
-        }
+    @keyframes scroll-right {
+        from { transform: translateX(-50%); }
+        to { transform: translateX(0); }
     }
 }
 
@@ -136,4 +129,12 @@
     100% {
         background: rgba(255, 255, 255, 0.4);
     }
+}
+
+.pre-header {
+    @apply text-green-600 uppercase tracking-[0.5em] text-sm mb-4 text-center;
+}
+
+.section-header {
+    @apply text-text-primary font-semibold text-3xl md:text-4xl text-center mb-10;
 }

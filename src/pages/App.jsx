@@ -3,6 +3,7 @@ import Hero from '../components/Hero.jsx'
 import About from '../components/About.jsx'
 import Skills from '../components/Skills.jsx'
 import Footer from '../components/Footer.jsx'
+import FooterCTA from '../components/FooterCTA.jsx'
 import Certificates from '../components/Certificates.jsx'
 import FloatButton from '../components/FloatButton'
 import ProjectsTab from '../components/ProjectsTab.jsx'
@@ -12,7 +13,7 @@ import Resume from '../components/Resume'
 function App() {
 
   return (
-    <div className='min-h-dvh bg-black'>
+    <div className='min-h-dvh bg-black overflow-x-hidden'>
 
       <main>
         <Hero/>
@@ -21,15 +22,15 @@ function App() {
         <div className='w-full max-w-7xl mx-auto px-6 md:px-12'>
           <Skills/>
           <Resume/>
-          <ProjectsTab/>
           <ProjectsSection/>
-          <Certificates/>
+          <Certificates/> 
         </div>
         
-        <FloatButton/>
       </main>
       
-      <Footer/>
+      {/* <Footer/> */}
+      <FooterCTA/>
+      <FloatButton/>
 
     </div>
   )

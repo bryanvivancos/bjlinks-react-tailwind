@@ -10,4 +10,4 @@ export const GITHUB = "https://github.com/bryanvivancos"
 
 export const INSTAGRAM = "https://instagram.com/bryanvivancos"
 
-export const MAIL = "mailto:bryanvivanco97@outlook.com"
+export const MAIL = "bryanvivanco97@outlook.com"

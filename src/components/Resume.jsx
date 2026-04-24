@@ -5,12 +5,12 @@ const Resume = () => {
         <div className='flex flex-col items-center gap-8 mb-12'>
             <div className='inline-flex items-center gap-2'>
                 
-                <span className='text-green-600 tracking-[0.5em] font-bold font-Quick text-sm md:text-base uppercase'>
+                <span className='pre-header'>
                     Currículums
                 </span>
                 
             </div>
-            <h2 className="text-text-primary font-Quick font-black text-3xl md:text-4xl text-center">
+            <h2 className="section-header">
                 Descarga mi CV
             </h2>
         </div>
