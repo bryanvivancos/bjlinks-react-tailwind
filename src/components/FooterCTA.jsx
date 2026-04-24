@@ -21,9 +21,9 @@ const FooterCTA = () => {
                         
                         {/* Main Heading */}
                         <h2 className="text-white font-light text-4xl md:text-6xl leading-[1.1] tracking-tight">
-                            Creémos<br/>
-                            <span className="italic font-serif">historias </span> 
-                            juntos
+                            Construyamos<br/>
+                            algo que<br/>
+                            <span className="italic font-serif"> importe.</span> 
                         </h2>
 
                         {/* Email CTA */}
