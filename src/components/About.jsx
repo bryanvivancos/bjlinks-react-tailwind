@@ -14,7 +14,7 @@ const About = () => {
             {/* Content Container */}
             <div className='relative z-10 w-full max-w-5xl mx-auto px-6 md:px-12'>
                 
-                <div className='pre-header'>ABOUT</div>
+                <div className='pre-header'>SOBRE MÍ</div>
 
                 {/* Small Decorative Dots */}
                 {/* <div className='flex items-center justify-center gap-1 mb-8'>
