@@ -1,43 +1,36 @@
 import '../styles/App.css'
-import Header from '../components/Header.jsx'
+import Hero from '../components/Hero.jsx'
+import About from '../components/About.jsx'
 import Skills from '../components/Skills.jsx'
-// import ProjectsGrid from '../components/ProjectsGrid.jsx'
 import Footer from '../components/Footer.jsx'
+import FooterCTA from '../components/FooterCTA.jsx'
 import Certificates from '../components/Certificates.jsx'
 import FloatButton from '../components/FloatButton'
 import ProjectsTab from '../components/ProjectsTab.jsx'
-import { Description } from '../components/Description.jsx'
+import ProjectsSection from '../components/ProjectsSection.jsx'
 import Resume from '../components/Resume'
-import { DESCRIPTION } from '../CONTANTS.js'
 
 function App() {
 
   return (
-    <div className='grid grid-rows-[auto_1fr_auto] min-h-dvh justify-center items-center max-w-xl mx-auto px-4'>
+    <div className='min-h-dvh bg-black overflow-x-hidden'>
 
-      <main className='place-items-center mt-8'>
-        <div className='md:grid md:grid-cols-2 max-md:flex max-md:flex-col items-center w-full justify-center gap-2
-        timeline-view animate-fade-out-up animate-range-exit
-        '>
-          <div className='flex max-md:flex-col justify-center'>
-            <Header/>
-          </div>
-          <Description/>
+      <main>
+        <Hero/>
+        <About/>
+        
+        <div className='w-full max-w-7xl mx-auto px-6 md:px-12'>
+          <Skills/>
+          <Resume/>
+          <ProjectsSection/>
+          <Certificates/> 
         </div>
-        <div className='text-balance text-white font-Quick text-center my-4
-        timeline-view animate-fade-out-up animate-range-[cover_70%]
-        '> 
-          <p className='animate-slide-in-top'>
-            {DESCRIPTION}
-          </p>
-        </div>
-        <Skills/>
-        <Resume/>
-        <ProjectsTab/>
-        <Certificates/>
-        <FloatButton/>
+        
       </main>
-      <Footer/>
+      
+      {/* <Footer/> */}
+      <FooterCTA/>
+      <FloatButton/>
 
     </div>
   )

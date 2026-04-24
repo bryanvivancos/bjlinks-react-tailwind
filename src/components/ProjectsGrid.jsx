@@ -3,13 +3,13 @@ import Project from './atoms/Project.jsx'
 
 const ProjectsGrid = () => {   
     const reactBackground = "bg-gradient-to-br from-cyan-900 via-cyan-700 to-cyan-500 border border-cyan-900"
-    const pythonBackground = "bg-linear-to-br from-[#1565A7] to-[#327EBD] border border-[#327EBD]"
+    const pythonBackground = "bg-gradient-to-br from-blue-800 via-blue-600 to-blue-500 border border-blue-900"
     const reflexBackground = "bg-gradient-to-br from-violet-800 via-violet-600 to-violet-500 border border-violet-900"
-    const djangoBackground = "bg-gradient-to-br from-[#187451] to-[#27c187] border border-[#187451]"
+    const djangoBackground = "bg-gradient-to-br from-accent-dark via-accent to-accent-hover border border-accent-dark"
 
 
     return <div id='projects' className='mb-8'>
-        <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Proyectos</h2>
+        <h2 className='text-text-primary font-Quick flex justify-center mb-4 font-black text-xl'>Proyectos</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 w-full">
 
@@ -92,7 +92,7 @@ const ProjectsGrid = () => {
                 name={"Más Proyectos..."}
                 skill={"github"}
                 span={"md:col-span-1"}
-                background={"bg-gradient-to-br from-gray-600 to-gray-400 border border-gray-900"}
+                background={"bg-gradient-to-br from-bg-secondary to-accent-soft border border-border-strong"}
             />
         </div>
     </div>

@@ -6,56 +6,63 @@ const Project = ({ url, skillName, description, name, skill, ico, span, image })
     return (
         <a href={url} 
         target="_blank" 
-        aria-label={`Proyecto de ${skill}`}
-        className={`flex items-start hover:scale-105 hover:contrast-125 transition-all duration-300 ease-in-out col-span-1 ${span} group py-2
+        aria-label={`Proyecto de ${name}`}
+        className={`group rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl col-span-1 ${span}
         timeline-view animate-zoom-in animate-range-[entry_5%_contain_10%]
         `}>
 
-            <div className={`w-2/3 relative overflow-hidden flex flex-col md:border-y-3 md:border-l-3 border-y-2 border-l-2 border-green-950 group-hover:border-green-800 transition-all duration-300 ease-in-out rounded-bl-2xl rounded-tl-2xl py-1.5 px-2.5 md:py-1.5 md:px-2 h-36 justify-between`}>
+            <div className="grid md:grid-cols-2 gap-0">
+                
+                <div className="flex flex-col justify-between p-6 md:p-8">
 
-                <span className='font-semibold md:text-base text-sm z-10 text-white text flex my-1 leading-none'>
-                    {name} 
-                </span>
-            
-                <p className='text-white md:text-xs sm:text-[10px] text-[7.5px] pr-16'
-                >{ description }</p>
+                    <div>
+                        <div className="flex items-start gap-3 mb-4">
+                            {ico ? (
+                                <img src={ico} alt={skill}
+                                className='size-8 md:size-10 flex-shrink-0'/>
+                            ) : (
+                                <svg className='size-8 md:size-10 flex-shrink-0 text-accent'>
+                                    <use href={`${sprite}#${skill}`}/>
+                                </svg>
+                            )}
+                            <div>
+                                <span className='text-text-muted text-xs uppercase tracking-wide font-Quick'>
+                                    Featured Project
+                                </span>
+                                <h3 className='font-Quick font-bold text-lg md:text-xl text-text-primary leading-tight'>
+                                    {name}
+                                </h3>
+                            </div>
+                        </div>
 
-                <div className='flex gap-2 items-center w-full my-1'>
-                    <span className='sm:text-xs text-[8px] rounded-lg py-0.5 z-10 text-white'>
-                        {skillName}
-                    </span>
-                    {/* <svg width="32" height="32" 
-                        className='size-3.5 block md:hidden group-hover:block'>
-                        <use href={`${sprite}#openlink`}/>
-                    </svg> */}
+                        <p className='text-text-secondary text-sm md:text-base leading-relaxed mb-4'>
+                            {description}
+                        </p>
+
+                        <div className='flex flex-wrap gap-2 mb-4'>
+                            {skillName.split(',').map((tech, index) => (
+                                <span key={index} className='px-3 py-1 bg-bg-secondary border border-border rounded-lg text-text-primary text-xs font-Quick'>
+                                    {tech.trim()}
+                                </span>
+                            ))}
+                        </div>
+
+                        <div className='flex items-center gap-2 text-accent font-Quick font-semibold text-sm group-hover:gap-3 group-hover:text-green-600 transition-all'>
+                            <span>Ver proyecto</span>
+                        </div>
+
+                    </div>
                 </div>
 
-                {ico ? (
-                    <img src={ico} alt={ico}
-                    className='absolute -right-4 -bottom-4 -rotate-6 size-14 md:size-20 group-hover:-rotate-12 group-hover:scale-125 transtition-transform'/>) : 
-                    (
-                        <svg width="32" height="32"
-                        className='absolute -right-4 -bottom-4 -rotate-6 size-14 md:size-20 group-hover:-rotate-12 group-hover:scale-125 transtition-transform'>
-                            <use href={`${sprite}#${skill}`}/>
-                        </svg>
-                    )
-                }
-            </div>
-                
-            <div className='w-1/3 h-36 rounded-tr-2xl rounded-br-2xl overflow-hidden relative 
-           
-            '>
-                <div className='md:hidden group-hover:block absolute inset-0 bg-gradient-to-t from-black/35 to-transparent'/>
-                <img 
-                    src={`${image}`} 
-                    alt="imagen de proyecto" 
-                    className='h-full w-full object-cover'
-                />
-
-                <svg width="32" height="32" 
-                className='size-3.5 block md:hidden group-hover:block absolute bottom-2 right-2'>
-                <use href={`${sprite}#openlink`}/>
-            </svg>
+                <div className='relative h-64 md:h-auto bg-bg-secondary overflow-hidden'>
+                    <div className='absolute rounded-xl inset-0 bg-gradient-to-br from-accent/10 to-transparent'></div>
+                    <img 
+                        src={image} 
+                        alt={`Preview de ${name}`}
+                        className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl'
+                    />
+                    <div className='absolute inset-0 bg-gradient-to-t from-bg-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>
+                </div>
             </div>
 
         </a>

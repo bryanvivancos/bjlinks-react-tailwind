@@ -20,7 +20,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://vincode.dev"}
                     skillName={"Astro, React, Typescript y Tailwind CSS"}
-                    description={"Mi Startup de desarrollo de software que ofrece soluciones personalizadas para empresas e independientes."}
+                    description={"Startup enfocada en el desarrollo de soluciones digitales para negocios e independientes."}
                     name={"Vincode.dev"}
                     skill={"astro"}
                     span={"md:col-span-2"}
@@ -40,7 +40,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://quizter-web.vercel.app/"}
                     skillName={"React, Typescript, Zustand, Material UI y Express.js"}
-                    description={"Página de preguntas de cultura general en la que pondras a prueba tus conocimientos. Usando Express.js para la API"}
+                    description={"Aplicación web de trivia. Página de preguntas de cultura general en la que pondras a prueba tus conocimientos. Usando Express.js para la API"}
                     name={"Quizter App"}
                     skill={"react"}
                     span={"md:col-span-2"}
@@ -50,7 +50,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://randomizer-app-psi.vercel.app/"}
                     skillName={"React, Javascript y Tailwind CSS"}
-                    description={"Web de sorteos, juegos y datos aleatorios."}
+                    description={"Aplicación web para sorteos aleatorios con lógica personalizada. Web de sorteos, juegos y datos aleatorios."}
                     name={"Randomizer App"}
                     skill={"react"}
                     span={"md:col-span-2"}
@@ -60,7 +60,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://github.com/bryanvivancos/control-asist"}
                     skillName={"Python, Django y SQL"}
-                    description={"Control de asistencias para empresas con Python, Django, SQL Server."}
+                    description={"Desarrollo de sistema con Python (Django) y SQL Server para el registro y gestión de asistencia de colaboradores. Diseño de base de datos relacional, consultas SQL para análisis de asistencia, generación de reportes y métricas de comportamiento."}
                     name={"Assist Control"}
                     skill={"django"}
                     span={"md:col-span-1"}
@@ -70,7 +70,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://github.com/bryanvivancos/album_project"}
                     skillName={"Python, Reflex y Supabase"}
-                    description={"Plataforma con CRUD completo, muestra un catálogo de items con backend en SUPABASE."}
+                    description={"Aplicación full-stack tipo CRUD con arquitectura orientada a componentes e integración con base de datos en la nube, optimizando la gestión y persistencia de datos en tiempo real."}
                     name={"Album/Catalog"}
                     ico={"/reflex.ico"}
                     span={"md:col-span-2"}
@@ -80,7 +80,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://github.com/bryanvivancos/mj-awards-webscrapping"}
                     skillName={"Python"}
-                    description={"Haciendo web scrapping de la página de los premios un cantante en wikipedia."}
+                    description={"Extracción de datos desde fuentes web utilizando técnicas de scraping.Procesamiento, limpieza y estructuración de datos para su posterior análisis.Aplicación de análisis exploratorio y visualización para identificar insights relevantes."}
                     name={"Web Scrapping con Python"}
                     skill={"python"}
                     span={"md:col-span-2"}
@@ -132,7 +132,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://vincode.dev/services/vin-display"}
                     skillName={"React, Typescript y Tailwind CSS"}
-                    description={"Software de cartelería digital para negocios que desean gestionar su publicidad, menús y promociones de forma dinámica."}
+                    description={"Sistema web para gestión de publicidad y menús dinámicos en negocios. Software de cartelería digital para negocios que desean gestionar su publicidad, menús y promociones de forma dinámica."}
                     name={"VIN DISPLAY - Software de Cartelería Digital y Menús Dinámicos"}
                     skill={"react"}
                     span={"md:col-span-2"}
@@ -142,7 +142,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://catquiz-card.vercel.app/"}
                     skillName={"React, Typescript, Tailwind CSS y Strapi"}
-                    description={"Tarjeta digital para Joyeria"}
+                    description={"Tarjeta Digital para una Tienda de Joyas."}
                     name={"CatQuiz - Business Card"}
                     skill={"react"}
                     span={"md:col-span-2"}
@@ -152,7 +152,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://catquizpe.vercel.app/"}
                     skillName={"React, Javascript y Tailwind CSS"}
-                    description={"Link Web para la empresa Catquiz con React."}
+                    description={"Página link bio web para tienda de joyas con React JS."}
                     name={"CatQuiz - Link Bio"}
                     skill={"react"}
                     span={"md:col-span-2"}
@@ -162,7 +162,7 @@ const ProjectsTab = () => {
                 <Project
                     url={"https://github.com/bryanvivancos/formularioweb_a_pdf"}
                     skillName={"Python"}
-                    description={"Plantilla web tipo formulario que pasa las respuestas a un documento Word."}
+                    description={"Automatización de generación de documentos desde formularios web."}
                     name={"Formulario Web a Word"}
                     skill={"python"}
                     span={"md:col-span-1"}
@@ -174,13 +174,24 @@ const ProjectsTab = () => {
     }
 
     return (
-        <div id='projectstab' className='mb-8 pt-8 w-full'>
-            <h2 className='text-white font-Quick flex justify-center mb-4 font-black text-xl'>Proyectos</h2>
+        <section id='projectstab' className='w-full py-16 md:py-24'>
+            <div className='flex flex-col items-center gap-4 mb-12'>
+                <div className='inline-flex items-center gap-2'>
+                    
+                    <span className='text-green-600 tracking-[0.5em] font-bold font-Quick text-sm md:text-base uppercase'>
+                        Portfolio
+                    </span>
+                    
+                </div>
+                <h2 className='text-text-primary font-Quick font-black text-3xl md:text-4xl text-center'>
+                    Mis Proyectos
+                </h2>
+            </div>
 
-            <div className="flex flex-wrap justify-around border-b mb-8">
+            <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {tabs.map((tab) => (
                     <button key={tab.id}
-                    className={`px-4 py-2 text-white w-1/2 font-Quick ${activeTab === tab.id ? "border-b-2 border-emerald-900 text-emerald-300" : "hover:text-emerald-300"}`}
+                    className={`px-8 py-3 font-Quick font-semibold rounded-lg transition-all duration-300 ${activeTab === tab.id ? "bg-green-600 text-text-primary shadow-lg" : "bg-bg-card text-text-secondary hover:bg-bg-card-hover border border-border"}`}
                     onClick={() => setActiveTab(tab.id)} 
                     >
                         {tab.label}
@@ -188,10 +199,10 @@ const ProjectsTab = () => {
                 ))}
             </div>
 
-            <div className=''>
+            <div className='mt-12'>
                 {contents[activeTab]}
             </div>
-        </div>
+        </section>
     );
 }
 

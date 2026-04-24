@@ -4,26 +4,35 @@ import FloatBtnItem from './atoms/FloatBtnItem'
 
 const FloatButton = () => {
 
-    const [isClicked, setIsClicked] = useState(false)
-    // const buttonRef = useRef(null)
+    // const [isClicked, setIsClicked] = useState(false)
+    // // const buttonRef = useRef(null)
 
-    const handleClick = () => {
-        setIsClicked(!isClicked)
-        console.log("Menu Abierto:", !isClicked)
-    }
+    // const handleClick = () => {
+    //     setIsClicked(!isClicked)
+    //     console.log("Menu Abierto:", !isClicked)
+    // }
 
     return <div className='fixed bottom-10 right-5 p-2 flex items-end justify-end z-30'>
 
-        <button className={`shadow-3xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-500 z-50 absolute cursor-pointer`} onClick={handleClick}>
+        <a 
+                    href='https://bryanvivancosbusiness.vercel.app/'
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className='inline-block bg-green-400 text-black px-6 md:px-8 py-3 md:py-4 rounded-full text-xs md:text-sm font-medium tracking-wide uppercase hover:bg-green-700 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl'
+                >
+                    MI TARJETA
+                </a>
+
+        {/* <button className={`shadow-3xl flex items-center justify-center p-3 rounded-full bg-gradient-to-r from-yellow-500 to-yellow-500 z-50 absolute cursor-pointer`} onClick={handleClick}>
             <svg width="35" height="35"
             className={`h-6 w-6 transition-all duration-200 ease-out ${isClicked ? 'rotate-180' : 'rotate-0'}`}>
                 <use href={`${sprite}#menudots`}/>
             </svg>
-        </button>
+        </button> */}
 
 
         {/* {isClicked && ( */}
-            <div aria-hidden={!isClicked} className={`absolute bottom-4 right-10 flex flex-col gap-1 p-4 items-center justify-center rounded-3xl transition-all duration-300 ease-out origin-bottom-right transform w-56 h-62
+            {/* <div aria-hidden={!isClicked} className={`absolute bottom-4 right-10 flex flex-col gap-1 p-4 items-center justify-center rounded-3xl transition-all duration-300 ease-out origin-bottom-right transform w-56 h-62
             ${isClicked ? 'scale-100 opacity-100 translate-x-0 pointer-events-auto' : 'scale-0 opacity-0 translate-x-10 pointer-events-none'}
             `}>
                 
@@ -46,7 +55,7 @@ const FloatButton = () => {
                     to="certificates" 
                     item="Certificados" 
                     onClick={()=> setIsClicked(false)}/>
-            </div>
+            </div> */}
         {/* )} */}
 
     </div>
