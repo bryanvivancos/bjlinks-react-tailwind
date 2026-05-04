@@ -24,7 +24,7 @@ const ProjectsSection = () => {
             description: 'Impulsa tu presencia profesional con una tarjeta digital personalizada que reúne todos tus datos de contacto.',
             name: 'Tarjeta de Presentación Profesional',
             skill: 'react',
-            image: '/imgs/bj-card-img.webp'
+            image: '/imgs/img-card-vincode.webp'
         },
         {
             url: 'https://quizter-web.vercel.app/',
