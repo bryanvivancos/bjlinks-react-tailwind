@@ -19,10 +19,10 @@ const ProjectsSection = () => {
             image: '/imgs/vincode-img.webp'
         },
         {
-            url: 'https://bryanvivancosbusiness.vercel.app/',
-            skillName: 'React, Typescript, Strapi',
+            url: 'https://card.vincode.dev/',
+            skillName: 'React, Typescript, Supabase',
             description: 'Impulsa tu presencia profesional con una tarjeta digital personalizada que reúne todos tus datos de contacto.',
-            name: 'Tarjeta Digital Profesional',
+            name: 'Tarjeta de Presentación Profesional',
             skill: 'react',
             image: '/imgs/bj-card-img.webp'
         },
