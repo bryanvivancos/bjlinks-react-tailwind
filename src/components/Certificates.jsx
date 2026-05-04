@@ -1,8 +1,14 @@
 import CertificateItem from "./atoms/CertificateItem"
 
-const Certificates = () => { 
+const Certificates = () => {
 
     const certificates = [
+        {
+            url: "https://drive.google.com/file/d/1f92NkblrWxaD-7qvCa2iJgdXFHQ0D_n7/view?usp=sharing",
+            logo: "bigschool",
+            from: "Big School",
+            course: "Curso de SEO para IA y Google",
+        },
         {
             url: "https://drive.google.com/file/d/1_cQL2pSuzzV1V_9WS6sKCRLqNsO3D6Vi/view?usp=sharing",
             logo: "platzi",
@@ -79,15 +85,15 @@ const Certificates = () => {
 
 
 
-    
+
     return <section id="certificates" className="w-full py-16 md:py-24 font-Quick text-text-primary">
         <div className='flex flex-col items-center gap-4 mb-12'>
             <div className='inline-flex items-center gap-2'>
-                
+
                 <span className='pre-header'>
                     Formación
                 </span>
-                
+
             </div>
             <h2 className="section-header">
                 Certificaciones
@@ -98,9 +104,9 @@ const Certificates = () => {
 
             {
                 certificates.map((certificate, index) => {
-                    const animation = index % 2 === 0 
-                    ? "animate-fade-up"
-                    : "animate-fade-up"
+                    const animation = index % 2 === 0
+                        ? "animate-fade-up"
+                        : "animate-fade-up"
 
                     return (
                         <div
