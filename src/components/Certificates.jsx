@@ -86,7 +86,10 @@ const Certificates = () => {
 
 
 
-    return <section id="certificates" className="w-full py-16 md:py-24 font-Quick text-text-primary">
+    return <section id="certificates" className="w-full py-16 md:py-24 font-Quick text-text-primary bg-black">
+        {/* fade superior */}
+        <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent z-10" />
+
         <div className='flex flex-col items-center gap-4 mb-12'>
             <div className='inline-flex items-center gap-2'>
 
@@ -103,20 +106,14 @@ const Certificates = () => {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
 
             {
-                certificates.map((certificate, index) => {
-                    const animation = index % 2 === 0
-                        ? "animate-fade-up"
-                        : "animate-fade-up"
-
-                    return (
-                        <div
-                            key={index}
-                            className={`timeline-view animate-range-[entry_10%_contain_20%] ${animation}`}
-                        >
-                            <CertificateItem {...certificate} />
-                        </div>
-                    )
-                })
+                certificates.map((certificate, index) => (
+                    <div
+                        key={index}
+                        className="md:timeline-view md:animate-range-[entry_10%_contain_20%] md:animate-fade-up"
+                    >
+                        <CertificateItem {...certificate} />
+                    </div>
+                ))
             }
 
         </div>

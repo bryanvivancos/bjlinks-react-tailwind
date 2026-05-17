@@ -3,26 +3,26 @@ import TiltImage from './atoms/TiltImage'
 
 const Hero = () => {
     return (
-        <section id='hero' className='relative w-full min-h-screen bg-black'>
-            
+        <section id='hero' className='relative w-full min-h-screen bg-black z-10'>
+
             <Navbar />
 
             {/* Giant Background Text */}
-            <div className='hidden md:block absolute inset-0 flex items-center justify-center pointer-events-none '>
-                <h1 className='text-[18vw] md:text-[16vw] font-black tracking-tighter text-white/[0.04] whitespace-nowrap select-none'>
-                    BRYAN VIVANCO
+            <div className='hidden md:block absolute inset-0 flex items-center justify-center pointer-events-none top-60'>
+                <h1 className='text-[16vw] md:text-[14vw] font-black tracking-tighter text-white/[0.04] whitespace-nowrap select-none md:animate-scroll-name'>
+                    BRYAN VIVANCO BRYAN VIVANCO
                 </h1>
             </div>
 
             {/* Main Content */}
             <div className='relative z-10 flex flex-col items-center justify-center min-h-screen px-6 md:px-12 pt-24 pb-32'>
-                
+
                 {/* Central Image */}
                 <div className='w-full max-w-[280px] md:max-w-[340px] mb-8 md:mb-12'>
                     <div className='relative aspect-[4/5] rounded-xl shadow-2xl group'>
-                        <TiltImage 
-                            src='/IMG-20230911-WA0113.webp' 
-                            alt='Bryan Vivanco Silva' 
+                        <TiltImage
+                            src='/IMG-20230911-WA0113.webp'
+                            alt='Bryan Vivanco Silva'
                         />
                     </div>
                 </div>

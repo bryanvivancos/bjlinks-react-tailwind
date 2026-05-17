@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@plugin "@midudev/tailwind-animations";
+@import 'tailwind-animations';
 
 @font-face {
     font-family: "Quicksand";
@@ -77,6 +77,7 @@
 
     --font-family-Quick: "Quicksand", system-ui, sans-serif;
 
+    --animate-scroll-name: scroll-left 8s linear infinite;
     --animate-scroll-left: scroll-left 10s linear infinite;
     --animate-scroll-right: scroll-right 10s linear infinite;
 
@@ -90,6 +91,32 @@
         from { transform: translateX(-50%); }
         to { transform: translateX(0); }
     }
+
+    @keyframes fadeOnly {
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.fade-opacity {
+  opacity: 1;
+}
+
+@supports (animation-timeline: view()) {
+  .fade-opacity {
+    opacity: 0;
+    animation: fadeOnly linear forwards;
+    animation-timeline: view();
+    animation-range: entry 20% cover 40%;
+  }
+}
+
+@media (max-width: 767px) {
+  .fade-opacity {
+    opacity: 1 !important;
+    animation: none !important;
+  }
 }
 
 #stars {
@@ -104,30 +131,33 @@
     z-index: 10;
 }
 
+main {
+    position: relative;
+    z-index: 20;
+}
+
+section {
+    position: relative;
+    z-index: 1;
+}
+
 .star {
     position: absolute;
     width: 2px;
     height: 2px;
     background: #fff;
-    /* right: 0; */
     animation: starTwinkle 10s infinite linear;
 }
 
 @keyframes starTwinkle {
-    0% {
-        background: rgba(255, 255, 255, 0.4);
+    0%, 100% {
+        opacity: 0.4;
     }
-    25% {
-        background: rgba(255, 255, 255, 0.8);
+    25%, 75% {
+        opacity: 0.8;
     }
     50% {
-        background: rgba(255, 255, 255, 1);
-    }
-    75% {
-        background: rgba(255, 255, 255, 0.8);
-    }
-    100% {
-        background: rgba(255, 255, 255, 0.4);
+        opacity: 1;
     }
 }
 
@@ -137,4 +167,61 @@
 
 .section-header {
     @apply text-text-primary font-semibold text-3xl md:text-4xl text-center mb-10;
+}
+
+.stacked-cards-container {
+    display: grid;
+    grid-gap: 2.5rem;
+    position: relative;
+}
+
+.project-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+@media (min-width: 768px) {
+    .project-card {
+        position: sticky;
+        top: 50px;
+        min-height: 90vh;
+    }
+
+    .project-card:hover {
+        will-change: transform;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .star {
+        animation: none;
+        opacity: 0.6;
+    }
+    
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .stacked-cards-container {
+        /* grid-gap: 1.5rem; Para quitar efecto en moviles */
+        grid-gap: 2.5rem;
+    }
+
+    .project-card {
+        position: relative;
+        min-height: auto;
+        transform: none !important;
+        scale: 1 !important;
+    }
+
+    .star {
+        animation: none;
+        opacity: 0.5;
+    }
 }

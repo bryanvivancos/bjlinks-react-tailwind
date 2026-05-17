@@ -1,12 +1,13 @@
+import { memo } from 'react'
 import sprite from '../../assets/sprite.svg'
 
-const CertificateItem = ({ url, logo, ico, from, course }) => {
+const CertificateItem = memo(({ url, logo, ico, from, course }) => {
     return (
         <a
             href={url}
             target='_blank'
             rel='noopener noreferrer'
-            className='aspect-square relative flex flex-col justify-between p-3 lg:p-6 group bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 hover:border-green-600/30 transition-all duration-500 hover:bg-white/10 hover:scale-[1.02] overflow-hidden'
+            className='aspect-square relative flex flex-col justify-between p-3 lg:p-6 group bg-white/10 md:bg-white/5 lg:backdrop-blur-sm rounded-2xl border border-white/10 hover:border-green-600/30 transition-all duration-500 hover:bg-white/10 hover:scale-[1.02] overflow-hidden'
         >
             {/* Gradient Overlay on Hover */}
             <div className='absolute inset-0 bg-gradient-to-br from-green-600/0 to-green-600/0 group-hover:from-green-600/5 group-hover:to-transparent transition-all duration-500 pointer-events-none'></div>
@@ -19,6 +20,10 @@ const CertificateItem = ({ url, logo, ico, from, course }) => {
                             className='h-6 lg:h-14 object-contain'
                             src={ico}
                             alt={`${from} logo`}
+                            loading="lazy"
+                            decoding="async"
+                            width="56"
+                            height="56"
                         />
                     </div>
                 ) : (
@@ -62,6 +67,8 @@ const CertificateItem = ({ url, logo, ico, from, course }) => {
             </div>
         </a>
     )
-}
+})
+
+CertificateItem.displayName = 'CertificateItem'
 
 export default CertificateItem;

@@ -13,24 +13,24 @@ import Resume from '../components/Resume'
 function App() {
 
   return (
-    <div className='min-h-dvh bg-black overflow-x-hidden'>
+    <div className='min-h-dvh bg-black overflow-x-hidden relative z-10'>
 
-      <main>
-        <Hero/>
-        <About/>
-        
+      <main className='relative z-20'>
+        <Hero />
+        <About />
+
         <div className='w-full max-w-7xl mx-auto px-6 md:px-12'>
-          <Skills/>
-          <Resume/>
-          <ProjectsSection/>
-          <Certificates/> 
+          <Skills />
+          <Resume />
+          <ProjectsSection />
+          <Certificates />
         </div>
-        
+
       </main>
-      
+
       {/* <Footer/> */}
-      <FooterCTA/>
-      <FloatButton/>
+      <FooterCTA />
+      <FloatButton />
 
     </div>
   )

@@ -1,19 +1,20 @@
 const About = () => {
     return (
-        <section id='about' className='relative w-full min-h-screen bg-black flex items-center justify-center py-20 md:py-32'>
-            
-            {/* Gradient Blur Background - Top Left (Blue/Purple) */}
-            <div className='absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-br from-blue-600/30 via-brown-600/20 to-transparent blur-[120px] rounded-full'></div>
-            
-            {/* Gradient Blur Background - Center (Orange/Red) */}
-            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-br from-green-600/40 via-green-600/20 to-transparent blur-[150px] rounded-full'></div>
-            
-            {/* Gradient Blur Background - Bottom Right (Blue) */}
-            <div className='absolute bottom-0 right-0 w-[500px] h-[500px] bg-gradient-to-tl from-blue-600/30 via-brown-600/20 to-transparent blur-[120px] rounded-full'></div>
+        <section id='about' className='relative w-full min-h-[50vh] md:min-h-screen bg-black flex items-center justify-center py-16 md:py-32 z-10'>
+
+            {/* fade a los laterales  */}
+            <div className="hidden md:block pointer-events-none absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black to-transparent z-10" />
+
+            <div className="hidden md:block pointer-events-none absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-black via-black/80 to-transparent z-10" />
+
+            {/* fin de fade a los laterales  */}
+
+            {/* Gradient Blur Background - Optimized for mobile */}
+            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-gradient-to-br from-green-600/25 via-green-600/10 to-transparent blur-[60px] md:blur-[100px] rounded-full'></div>
 
             {/* Content Container */}
             <div className='relative z-10 w-full max-w-5xl mx-auto px-6 md:px-12'>
-                
+
                 <div className='pre-header'>SOBRE MÍ</div>
 
                 {/* Small Decorative Dots */}
@@ -26,10 +27,10 @@ const About = () => {
 
                 {/* Main Text Content */}
                 <div className='text-center space-y-8'>
-                    <h2 className='text-white text-lg md:text-xl lg:text-2xl font-light leading-relaxed tracking-wide px-4 uppercase'>
+                    <h2 className='text-white text-lg md:text-xl lg:text-2xl font-light leading-relaxed tracking-wide px-4 uppercase fade-opacity'>
                         {' '}
-                        <span className='font-normal'>DESARROLLADOR WEB</span>{' '} e Ingeniero Electrónico y Telecomunicaciones Colegiado. 
-                        Con +4 años de experiencia construyendo aplicaciones web y soluciones end-to-end. Experiencia desarrollando sistemas full-stack utilizando React, Node.js, Python y SQL, abarcando desde interfaces de usuario hasta APIs y gestión de datos en la nube. 
+                        <span className='font-normal'>DESARROLLADOR WEB</span>{' '} e Ingeniero Electrónico y Telecomunicaciones Colegiado.
+                        Con +4 años de experiencia construyendo aplicaciones web y soluciones end-to-end. Experiencia desarrollando sistemas full-stack utilizando React, Node.js, Python y SQL, abarcando desde interfaces de usuario hasta APIs y gestión de datos en la nube.
                     </h2>
                 </div>
 

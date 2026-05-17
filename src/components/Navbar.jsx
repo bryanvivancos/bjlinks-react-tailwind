@@ -34,8 +34,8 @@ const Navbar = () => {
                     <a href='#' className='hidden md:block hover:text-green-500 transition-all duration-300 text-white text-base md:text-xl tracking-[0.2em] font-light uppercase'>
                         BRYAN VIVANCO
                     </a>
-                    
-                    <button 
+
+                    <button
                         onClick={() => setIsOpen(!isOpen)}
                         className='absolute left-1/2 -translate-x-1/2 cursor-pointer group flex flex-col items-center gap-1'
                     >
@@ -44,9 +44,9 @@ const Navbar = () => {
                             {isOpen ? 'CLOSE' : 'MENU'}
                         </span>
                     </button>
-                    
-                    <a 
-                        href='#contact' 
+
+                    <a
+                        href='#contact'
                         className='hidden md:block cursor-pointer hover:text-green-500 transition-all duration-300 text-white text-base md:text-xl tracking-[0.2em] font-light uppercase'
                     >
                         CONTACT
@@ -55,13 +55,12 @@ const Navbar = () => {
             </nav>
 
             {/* Fullscreen Overlay Menu */}
-            <div 
-                className={`fixed inset-0 z-40 transition-opacity duration-500 ease-in-out ${
-                    isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-                }`}
+            <div
+                className={`fixed inset-0 z-40 transition-opacity duration-500 ease-in-out ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+                    }`}
             >
                 {/* Gradient Background */}
-                <div className='absolute inset-0 backdrop-blur-2xl bg-black/40'></div>
+                <div className='absolute inset-0 md:backdrop-blur-2xl bg-black/90 md:bg-black/40'></div>
                 <div className='absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-green-500/30'></div>
 
                 {/* Menu Content */}
@@ -72,9 +71,8 @@ const Navbar = () => {
                                 key={link.label}
                                 href={link.href}
                                 onClick={handleLinkClick}
-                                className={`text-white text-4xl md:text-6xl lg:text-7xl font-light uppercase tracking-[0.15em] hover:opacity-70 hover:scale-105 transition-all duration-300 ${
-                                    isOpen ? 'animate-fadeInUp' : ''
-                                }`}
+                                className={`text-white text-4xl md:text-6xl lg:text-7xl font-light uppercase tracking-[0.15em] hover:opacity-70 hover:scale-105 transition-all duration-300 ${isOpen ? 'animate-fadeInUp' : ''
+                                    }`}
                                 style={{
                                     animationDelay: isOpen ? `${index * 100}ms` : '0ms'
                                 }}
@@ -91,17 +89,26 @@ const Navbar = () => {
                 @keyframes fadeInUp {
                     from {
                         opacity: 0;
-                        transform: translateY(30px);
+                        transform: translate3d(0, 20px, 0);
                     }
                     to {
                         opacity: 1;
-                        transform: translateY(0);
+                        transform: translate3d(0, 0, 0);
                     }
                 }
 
                 .animate-fadeInUp {
-                    animation: fadeInUp 0.6s ease-out forwards;
+                    animation: fadeInUp 0.4s ease-out forwards;
                     opacity: 0;
+                    will-change: transform, opacity;
+                }
+
+                @media (prefers-reduced-motion: reduce) {
+                    .animate-fadeInUp {
+                        animation: none;
+                        opacity: 1;
+                        transform: none;
+                    }
                 }
             `}</style>
         </>

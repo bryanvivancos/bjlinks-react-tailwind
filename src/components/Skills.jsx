@@ -1,3 +1,4 @@
+import { useMemo } from 'react'
 import '../styles/App.css'
 import SkillItem from './atoms/SkillItem'
 
@@ -28,9 +29,12 @@ const skills_two = [
 
 
 const Skills = () => {
-    return <section id='skills' className='py-16 md:py-24'>
+    const duplicatedSkillsOne = useMemo(() => [...skills_one, ...skills_one], [])
+    const duplicatedSkillsTwo = useMemo(() => [...skills_two, ...skills_two], [])
+
+    return <section id='skills' className='py-16 md:py-24 relative z-10'>
         <div className='max-w-xs md:max-w-lg lg:max-w-xl mx-auto'>
-            
+
             <div className='flex flex-col items-center gap-4 mb-12'>
                 <div className='inline-flex items-center gap-2'>
                     <span className='pre-header'>
@@ -51,8 +55,8 @@ const Skills = () => {
                 {/* 🔥 Carousel track */}
                 <div className="flex w-max animate-scroll-left hover:[animation-play-state:paused]">
 
-                    {[...skills_one, ...skills_one].map((skill, index) => (
-                        <SkillItem 
+                    {duplicatedSkillsOne.map((skill, index) => (
+                        <SkillItem
                             key={index}
                             url={skill.url}
                             skill={skill.skill}
@@ -64,8 +68,8 @@ const Skills = () => {
                 {/* 🔥 Carousel track */}
                 <div className="flex w-max animate-scroll-right hover:[animation-play-state:paused]">
 
-                    {[...skills_two, ...skills_two].map((skill, index) => (
-                        <SkillItem 
+                    {duplicatedSkillsTwo.map((skill, index) => (
+                        <SkillItem
                             key={index}
                             url={skill.url}
                             skill={skill.skill}
@@ -74,9 +78,9 @@ const Skills = () => {
                     ))}
 
                 </div>
-                 
+
             </div>
-            </div>
+        </div>
     </section>
 }
 

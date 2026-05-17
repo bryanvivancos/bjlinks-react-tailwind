@@ -4,25 +4,27 @@ import sprite from '../../assets/sprite.svg'
 
 const Project = ({ url, skillName, description, name, skill, ico, span, image }) => {
     return (
-        <a href={url} 
-        target="_blank" 
-        aria-label={`Proyecto de ${name}`}
-        className={`group rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl col-span-1 ${span}
+        <a href={url}
+            target="_blank"
+            aria-label={`Proyecto de ${name}`}
+            className={`group rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-xl col-span-1 ${span}
         timeline-view animate-zoom-in animate-range-[entry_5%_contain_10%]
         `}>
 
             <div className="grid md:grid-cols-2 gap-0">
-                
+
                 <div className="flex flex-col justify-between p-6 md:p-8">
 
                     <div>
                         <div className="flex items-start gap-3 mb-4">
                             {ico ? (
                                 <img src={ico} alt={skill}
-                                className='size-8 md:size-10 flex-shrink-0'/>
+                                    loading="lazy"
+                                    decoding="async"
+                                    className='size-8 md:size-10 flex-shrink-0' />
                             ) : (
                                 <svg className='size-8 md:size-10 flex-shrink-0 text-accent'>
-                                    <use href={`${sprite}#${skill}`}/>
+                                    <use href={`${sprite}#${skill}`} />
                                 </svg>
                             )}
                             <div>
@@ -56,9 +58,11 @@ const Project = ({ url, skillName, description, name, skill, ico, span, image })
 
                 <div className='relative h-64 md:h-auto bg-bg-secondary overflow-hidden'>
                     <div className='absolute rounded-xl inset-0 bg-gradient-to-br from-accent/10 to-transparent'></div>
-                    <img 
-                        src={image} 
+                    <img
+                        src={image}
                         alt={`Preview de ${name}`}
+                        loading="lazy"
+                        decoding="async"
                         className='w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl'
                     />
                     <div className='absolute inset-0 bg-gradient-to-t from-bg-primary/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300'></div>

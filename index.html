@@ -26,36 +26,47 @@
       document.addEventListener("DOMContentLoaded",function(){
     
           const stars = document.getElementById("stars");
+          const isMobile = window.innerWidth < 768;
+          const isLowEnd = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
+          
+          let maxStars = isMobile ? 15 : 30;
+          let currentStars = 0;
+          
+          if (isMobile && isLowEnd) {
+            maxStars = 8;
+          }
+          
+          const interval = isMobile ? 300 : 100;
 
-          setInterval(createStar,100);
-            // Esto controla la cantidad de estrellas
-            // 100 → ~10 estrellas por segundo
-            // 50 → ~20 estrellas por segundo
-            // 20 → ~50 estrellas por segundo - cuidado rendimiento
+          setInterval(createStar, interval);
 
           function createStar(){
-              let right=Math.random()*500; //La estrella empieza un poco fuera o cerca del borde derecho.
-
-              let docHeight = document.documentElement.scrollHeight;
-              let top=Math.random()*docHeight; //Las estrellas aparecen en toda la altura del documento
+              if (currentStars >= maxStars) {
+                return;
+              }
+              
+              currentStars++;
+              
+              let right=Math.random()*500;
+              let viewportHeight = window.innerHeight;
+              let top=Math.random()*viewportHeight;
 
               let star=document.createElement("div");
               star.classList.add("star")
-              stars.appendChild(star); //se crea un div nuevo con la clase 'star'
+              stars.appendChild(star);
 
-              // setInterval(runStar,10);
               star.style.top=top+"px";
-              star.style.right = right + "px"; //posiciona la estrella
+              star.style.right = right + "px";
 
-              let interval = setInterval(runStar, 10);
+              let moveInterval = setInterval(runStar, isMobile ? 20 : 10);
 
               function runStar() {
                 if (right >= window.innerWidth + 50) {
-                  clearInterval(interval);
-                  star.remove(); //elimina la estrella del DOM cuando sale de la pantalla
+                  clearInterval(moveInterval);
+                  star.remove();
+                  currentStars--;
                 }
-                // right += 3;
-                right += 1.5; //velocidad de la estrellas
+                right += isMobile ? 1 : 1.5;
                 star.style.right = right + "px";
               }
           } 
