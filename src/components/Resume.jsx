@@ -1,7 +1,7 @@
 import sprite from '../assets/sprite.svg'
 
 const Resume = () => {
-    return <section className='w-full py-16 md:py-24'> 
+    return <section className='w-full py-16 md:py-24 z-0!'> 
         <div className='flex flex-col items-center gap-8 mb-12'>
             <div className='inline-flex items-center gap-2'>
                 

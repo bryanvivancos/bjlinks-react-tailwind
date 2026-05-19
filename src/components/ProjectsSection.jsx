@@ -125,7 +125,7 @@ const ProjectsSection = () => {
     //   return
     // }
 
-    const offset = isMobile ? 15 : 35;
+    const offset = isMobile ? 0 : 15;
 
     const cards = contentRef.current?.querySelectorAll('.project-card')
     if (!cards || cards.length === 0) return
@@ -140,7 +140,7 @@ const ProjectsSection = () => {
         ease: "none",
         scrollTrigger: {
           trigger: card,
-          start: `top ${15 + offset * i}`,
+          start: `top top`,
           end: "bottom bottom",
           endTrigger: contentRef.current,
           scrub: true,
@@ -167,7 +167,7 @@ const ProjectsSection = () => {
   )
 
   return (
-    <section id="projects" className="relative py-32 bg-black z-10" ref={wrapperRef}>
+    <section id="projects" className="relative py-32 bg-black z-0!" ref={wrapperRef}>
 
       {/* HEADER */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-20 text-center">
@@ -184,8 +184,8 @@ const ProjectsSection = () => {
           <button
             onClick={() => setActiveTab('personales')}
             className={`uppercase tracking-[0.3em] text-base transition-all duration-300 cursor-pointer ${activeTab === 'personales'
-              ? 'text-green-600'
-              : 'text-white/30 hover:text-white/60'
+              ? 'text-green-600 underline underline-offset-8'
+              : 'text-white/30 hover:text-white/60 hover:underline hover:underline-offset-8'
               }`}
           >
             Personales
@@ -194,8 +194,8 @@ const ProjectsSection = () => {
           <button
             onClick={() => setActiveTab('clientes')}
             className={`uppercase tracking-[0.3em] text-base transition-all duration-300 cursor-pointer ${activeTab === 'clientes'
-              ? 'text-green-600'
-              : 'text-white/30 hover:text-white/60'
+              ? 'text-green-600 underline underline-offset-8'
+              : 'text-white/30 hover:text-white/60 hover:underline hover:underline-offset-8'
               }`}
           >
             Clientes

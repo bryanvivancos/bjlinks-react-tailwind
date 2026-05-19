@@ -13,9 +13,9 @@ import Resume from '../components/Resume'
 function App() {
 
   return (
-    <div className='min-h-dvh bg-black overflow-x-hidden relative z-10'>
+    <div className='min-h-dvh bg-black overflow-x-hidden relative'>
 
-      <main className='relative z-20'>
+      <main className='relative'>
         <Hero />
         <About />
 

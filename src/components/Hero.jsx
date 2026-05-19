@@ -3,7 +3,7 @@ import TiltImage from './atoms/TiltImage'
 
 const Hero = () => {
     return (
-        <section id='hero' className='relative w-full min-h-screen bg-black'>
+        <section id='hero' className='relative w-full min-h-screen bg-black '>
 
             <Navbar />
 

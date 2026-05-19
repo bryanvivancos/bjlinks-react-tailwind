@@ -32,7 +32,7 @@ const Skills = () => {
     const duplicatedSkillsOne = useMemo(() => [...skills_one, ...skills_one], [])
     const duplicatedSkillsTwo = useMemo(() => [...skills_two, ...skills_two], [])
 
-    return <section id='skills' className='py-16 md:py-24 relative z-10'>
+    return <section id='skills' className='py-16 md:py-24 relative z-0!'>
         <div className='max-w-xs md:max-w-lg lg:max-w-xl mx-auto'>
 
             <div className='flex flex-col items-center gap-4 mb-12'>

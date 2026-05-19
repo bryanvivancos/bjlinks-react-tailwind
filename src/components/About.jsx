@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <section id='about' className='relative w-full min-h-[50vh] md:min-h-screen bg-black flex items-center justify-center py-16 md:py-32 z-10'>
+        <section id='about' className='relative w-full min-h-[50vh] md:min-h-screen bg-black flex items-center justify-center py-16 md:py-32 z-0!'>
 
             {/* fade a los laterales  */}
             <div className="hidden md:block pointer-events-none absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black to-transparent z-10" />

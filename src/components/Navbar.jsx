@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <>
             {/* Fixed Navbar */}
-            <nav className='fixed top-0 left-0 right-0 z-1000! px-6 md:px-12 py-6'>
+            <nav className={`fixed top-0 left-0 right-0 z-[100] px-6 md:px-12 py-6 mt-4 rounded-full w-[95%] mx-auto ${!isOpen && 'backdrop-blur-md bg-black/40 shadow-lg'}`}>
                 <div className='relative flex items-center justify-between'>
                     <a href='#' className='hidden md:block hover:text-green-500 transition-all duration-300 text-white text-base md:text-xl tracking-[0.2em] font-light uppercase'>
                         BRYAN VIVANCO
@@ -56,7 +56,7 @@ const Navbar = () => {
 
             {/* Fullscreen Overlay Menu */}
             <div
-                className={`fixed inset-0 z-40 transition-opacity duration-500 ease-in-out ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+                className={`fixed inset-0 z-[90] transition-opacity duration-500 ease-in-out ${isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
                     }`}
             >
                 {/* Gradient Background */}
