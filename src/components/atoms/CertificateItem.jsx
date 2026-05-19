@@ -39,12 +39,12 @@ const CertificateItem = memo(({ url, logo, ico, from, course }) => {
             <div className='relative z-10 flex flex-col gap-1.5'>
 
                 {/* Institution */}
-                <span className='text-white/50 text-[8px] lg:text-sm uppercase tracking-wider font-medium'>
+                <span className='text-white/50 text-[10px] md:text-[8px] lg:text-sm uppercase tracking-wider font-medium'>
                     {from}
                 </span>
 
                 {/* Course Name */}
-                <h3 className='flex text-white text-[10px] lg:text-lg font-medium leading-tight line-clamp-3 group-hover:text-green-600 transition-colors duration-300'>
+                <h3 className='flex text-white text-xs md:text-[10px] lg:text-lg font-medium leading-tight line-clamp-3 group-hover:text-green-600 transition-colors duration-300'>
                     {course}
                     {/* Arrow Icon */}
                     <div className='mt-2 -mb-2 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-0 group-hover:translate-x-1 group-hover:-translate-y-1'>

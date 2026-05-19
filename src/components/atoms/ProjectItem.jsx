@@ -7,10 +7,10 @@ const ProjectItem = memo(({ project, index }) => {
     const isEven = index % 2 === 0
 
     return (
-        <div className='w-full max-w-7xl mx-auto py-4 md:py-6'>
+        <div className='w-full max-w-7xl mx-auto py-8 md:py-6'>
             <div className="relative lg:backdrop-blur-lg bg-black/95 lg:bg-black/85 rounded-2xl border border-white/10 shadow-[0_20px_80px_rgba(0,0,0,0.6)]">
 
-                <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center ${isEven ? '' : 'md:grid-flow-dense'} p-6 md:p-10`}>
+                <div className={`grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center  max-md:max-h-[50%] ${isEven ? '' : 'md:grid-flow-dense'} px-6 py-4 md:px-10 md:py-6`}>
 
                     {/* Content Side */}
                     <div className={`flex flex-col gap-4 md:gap-6 md:gap-8 card-content ${isEven ? 'md:order-1' : 'md:order-2'}`}>
@@ -18,28 +18,28 @@ const ProjectItem = memo(({ project, index }) => {
                         {/* Badge */}
                         <div className='inline-flex items-center gap-4 w-fit'>
                             {ico ? (
-                                <img src={ico} alt={skill} loading="lazy" decoding="async" className='size-18' />
+                                <img src={ico} alt={skill} loading="lazy" decoding="async" className='size-12 md:size-18' />
                             ) : skill ? (
-                                <svg className='size-18 text-green-600'>
+                                <svg className='size-12 md:size-18 text-green-600'>
                                     <use href={`${sprite}#${skill}`} />
                                 </svg>
                             ) : null}
 
                             {/* Title */}
-                            <h3 className='text-white font-medium text-xl md:text-2xl lg:text-3xl leading-tight'>
+                            <h3 className='text-white font-medium text-lg md:text-xl md:text-2xl lg:text-3xl leading-tight'>
                                 {name}
                             </h3>
                         </div>
 
                         {/* Description */}
-                        <p className='text-white/80 text-lg leading-relaxed max-w-md'>
+                        <p className='text-white/80 text-base md:text-lg leading-relaxed max-w-md'>
                             {description}
                         </p>
 
                         {/* Stack */}
-                        <div className='flex flex-wrap items-center gap-3 text-white/60 text-lg'>
+                        <div className='flex flex-wrap items-center gap-2 md:gap-3 text-white/60 text-base md:text-lg'>
                             {skillName.split(',').map((tech, idx, arr) => (
-                                <span key={idx} className='flex items-center gap-3'>
+                                <span key={idx} className='flex items-center gap-2 md:gap-3'>
                                     {tech.trim()}
                                     {idx < arr.length - 1 && (
                                         <span className='w-1 h-1 rounded-full bg-white/60'></span>
@@ -53,7 +53,7 @@ const ProjectItem = memo(({ project, index }) => {
                             href={url}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='inline-flex items-center gap-2 text-white hover:text-green-600 text-lg font-medium transition-all duration-300 group w-fit border-1 md:border-3 border-white/30 hover:border-green-600/30 rounded-full px-4 md:px-6 py-2'
+                            className='inline-flex items-center gap-2 text-white hover:text-green-600 text-base md:text-lg font-medium transition-all duration-300 group w-fit border-1 md:border-3 border-white/30 hover:border-green-600/30 rounded-full px-4 md:px-6 py-2'
                         >
                             <span>Ver Proyecto</span>
                             <svg className='w-4 h-4 group-hover:translate-x-1 transition-transform' fill='none' stroke='currentColor' viewBox='0 0 24 24'>

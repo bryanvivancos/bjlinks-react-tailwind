@@ -125,7 +125,7 @@ const ProjectsSection = () => {
     //   return
     // }
 
-    const offset = isMobile ? 0 : 15;
+    const offset = isMobile ? 0 : 10;
 
     const cards = contentRef.current?.querySelectorAll('.project-card')
     if (!cards || cards.length === 0) return
@@ -136,11 +136,12 @@ const ProjectsSection = () => {
       })
 
       const tween = gsap.to(card, {
-        scale: 0.8,
+        // scale: 0.8,
+        scale: 0.7 + 0.2 * (i / (cards.length - 1)),
         ease: "none",
         scrollTrigger: {
           trigger: card,
-          start: `top top`,
+          start: `top ${10 + offset * i}`,
           end: "bottom bottom",
           endTrigger: contentRef.current,
           scrub: true,

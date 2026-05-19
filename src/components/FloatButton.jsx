@@ -12,7 +12,7 @@ const FloatButton = () => {
     //     console.log("Menu Abierto:", !isClicked)
     // }
 
-    return <div className='fixed bottom-10 right-5 p-2 flex items-end justify-end z-30'>
+    return <div className='fixed bottom-4 right-2 md:bottom-10 md:right-5 p-2 flex items-end justify-end z-30'>
 
         <a 
                     href='https://bryanvivancosbusiness.vercel.app/'
