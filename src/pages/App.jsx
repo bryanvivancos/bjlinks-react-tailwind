@@ -13,7 +13,7 @@ import Resume from '../components/Resume'
 function App() {
 
   return (
-    <div className='min-h-dvh bg-black relative'>
+    <div className='min-h-dvh bg-black overflow-hidden relative'>
 
       <main className='relative'>
         <Hero />
