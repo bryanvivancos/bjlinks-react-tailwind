@@ -3,14 +3,14 @@ import TiltImage from './atoms/TiltImage'
 
 const Hero = () => {
     return (
-        <section id='hero' className='relative w-full min-h-screen bg-black '>
+        <section id='hero' className='relative w-full min-h-screen'>
 
             <Navbar />
 
             {/* Giant Background Text */}
             <div className='hidden md:block absolute inset-0 flex items-center justify-center pointer-events-none top-60'>
-                <h1 className='text-[16vw] md:text-[14vw] font-black tracking-tighter text-white/[0.04] whitespace-nowrap select-none md:animate-scroll-name'>
-                    BRYAN VIVANCO BRYAN VIVANCO
+                <h1 className='text-center text-[8vw] md:text-[10vw] font-black tracking-tighter text-white/[0.04] whitespace-nowrap select-none'>
+                    BRYAN
                 </h1>
             </div>
 
@@ -29,6 +29,9 @@ const Hero = () => {
 
                 {/* Description Text */}
                 <div className='max-w-2xl text-center px-4'>
+                    <h2 className='text-white text-2xl md:text-3xl font-bold tracking-[0.15em] md:tracking-[0.20em] font-light uppercase leading-relaxed'>
+                        Bryan Vivanco Silva
+                    </h2>
                     <p className='text-white/50 text-sm md:text-base tracking-[0.25em] md:tracking-[0.3em] font-light uppercase leading-relaxed'>
                         Desarrollador Web - Ingeniero Electrónico y de Telecomunicaciones
                     </p>
