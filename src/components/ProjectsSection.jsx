@@ -70,6 +70,14 @@ const ProjectsSection = () => {
 
     clientes: [
       {
+        url: 'https://vinbook.vincode.dev/',
+        skillName: 'Next JS, Typescript, Tailwind CSS, Supabase',
+        description: 'Cada negocio con su página de citas, panel de administración y notificaciones automáticas — en una sola plataforma.',
+        name: 'VIN BOOK - Plataforma de reservas',
+        skill: 'nextjs',
+        image: '/imgs/vinbook-img.webp'
+      },
+      {
         url: 'https://vincode.dev/services/vin-display',
         skillName: 'React, Typescript, Tailwind CSS',
         description: 'Software de cartelería digital para negocios que desean gestionar su publicidad, menús y promociones de forma dinámica.',
