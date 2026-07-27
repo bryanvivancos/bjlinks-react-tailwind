@@ -5,6 +5,7 @@ import Skills from '../components/Skills.jsx'
 import Footer from '../components/Footer.jsx'
 import FooterCTA from '../components/FooterCTA.jsx'
 import Certificates from '../components/Certificates.jsx'
+import Clients from '../components/Clients.jsx'
 import FloatButton from '../components/FloatButton'
 import ProjectsTab from '../components/ProjectsTab.jsx'
 import ProjectsSection from '../components/ProjectsSection.jsx'
@@ -24,6 +25,7 @@ function App() {
           <Resume />
           <ProjectsSection />
           <Certificates />
+          <Clients />
         </div>
 
       </main>
