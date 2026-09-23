@@ -15,7 +15,7 @@ const FloatButton = () => {
     return <div className='fixed bottom-4 right-2 md:bottom-10 md:right-5 p-2 flex items-end justify-end z-30'>
 
         <a 
-                    href='https://bryanvivancosbusiness.vercel.app/'
+                    href='https://card.heybryan.net/'
                     target='_blank'
                     rel='noopener noreferrer'
                     className='inline-block bg-green-400 text-black px-6 md:px-8 py-3 md:py-4 rounded-full text-xs md:text-sm font-medium tracking-wide uppercase hover:bg-green-700 hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl'
