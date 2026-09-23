@@ -46,11 +46,7 @@ const Skills = () => {
                 </h2>
             </div>
 
-            <div className="relative w-full overflow-hidden py-10 group space-y-4">
-
-                {/* 🔥 Fade edges */}
-                <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10"></div>
-                <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10"></div>
+            <div className="skills-marquee relative w-full py-10 group space-y-4">
 
                 {/* 🔥 Carousel track */}
                 <div className="flex w-max animate-scroll-left hover:[animation-play-state:paused]">

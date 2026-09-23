@@ -1,6 +1,6 @@
 const About = () => {
     return (
-        <section id='about' className='relative w-full min-h-[50vh] md:min-h-screen bg-black flex items-center justify-center py-16 md:py-32 z-0!'>
+        <section id='about' className='relative w-full min-h-[50vh] md:min-h-screen flex items-center justify-center py-16 md:py-32 z-0!'>
 
             {/* fade a los laterales  */}
             <div className="hidden md:block pointer-events-none absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black to-transparent z-10" />
@@ -8,9 +8,6 @@ const About = () => {
             <div className="hidden md:block pointer-events-none absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-black via-black/80 to-transparent z-10" />
 
             {/* fin de fade a los laterales  */}
-
-            {/* Gradient Blur Background - Optimized for mobile */}
-            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-gradient-to-br from-green-600/25 via-green-600/10 to-transparent blur-[60px] md:blur-[100px] rounded-full'></div>
 
             {/* Content Container */}
             <div className='relative z-10 w-full max-w-5xl mx-auto px-6 md:px-12'>

@@ -176,7 +176,7 @@ const ProjectsSection = () => {
   )
 
   return (
-    <section id="projects" className="relative py-32 bg-black z-0!" ref={wrapperRef}>
+    <section id="projects" className="relative py-32 z-0!" ref={wrapperRef}>
 
       {/* HEADER */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-20 text-center">

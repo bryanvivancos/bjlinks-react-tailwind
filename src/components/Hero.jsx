@@ -1,25 +1,41 @@
 import Navbar from './Navbar'
 import TiltImage from './atoms/TiltImage'
 
+const MARQUEE_WORDS = ['BRYAN', 'BRYAN', 'BRYAN', 'BRYAN']
+
+const wordClass = 'm-0 pr-[0.7em] text-[18vw] md:text-[9vw] font-black leading-none tracking-tighter text-white/[0.04] whitespace-nowrap select-none'
+
 const Hero = () => {
     return (
-        <section id='hero' className='relative w-full min-h-screen'>
+        <section id='hero' className='relative w-full min-h-screen overflow-x-clip'>
 
             <Navbar />
 
             {/* Giant Background Text */}
-            <div className='hidden md:block absolute inset-0 flex items-center justify-center pointer-events-none top-60'>
-                <h1 className='text-center text-[8vw] md:text-[10vw] font-black tracking-tighter text-white/[0.04] whitespace-nowrap select-none'>
-                    BRYAN
-                </h1>
+            <div
+                className='hero-marquee-mask pointer-events-none absolute inset-x-0 top-[38%] z-0 -translate-y-1/2 overflow-hidden md:top-[42%]'
+            >
+                <div className='hero-marquee flex w-max'>
+                    {[0, 1].map((group) => (
+                        <div key={group} className='flex shrink-0' aria-hidden={group === 1 || undefined}>
+                            {MARQUEE_WORDS.map((word, index) => (
+                                group === 0 && index === 0 ? (
+                                    <h1 key={index} className={wordClass}>{word}</h1>
+                                ) : (
+                                    <span key={index} className={wordClass}>{word}</span>
+                                )
+                            ))}
+                        </div>
+                    ))}
+                </div>
             </div>
 
             {/* Main Content */}
             <div className='relative z-10 flex flex-col items-center justify-center min-h-screen px-6 md:px-12 pt-24 pb-32'>
 
                 {/* Central Image */}
-                <div className='w-full max-w-[280px] md:max-w-[340px] mb-8 md:mb-12'>
-                    <div className='relative aspect-[4/5] rounded-xl shadow-2xl group'>
+                <div className='relative w-full max-w-[280px] md:max-w-[340px] mb-8 md:mb-12'>
+                    <div className='relative z-10 aspect-[4/5] rounded-xl shadow-2xl group'>
                         <TiltImage
                             src='/IMG-20230911-WA0113.webp'
                             alt='Bryan Vivanco Silva'
@@ -37,18 +53,6 @@ const Hero = () => {
                     </p>
                 </div>
             </div>
-
-            {/* CTA Button - Bottom Right */}
-            {/* <div className='absolute bottom-8 right-6 md:bottom-12 md:right-12 z-20'>
-                <a 
-                    href='https://bryanvivancosbusiness.vercel.app/'
-                    target='_blank'
-                    rel='noopener noreferrer'
-                    className='inline-block bg-white text-black px-6 md:px-8 py-3 md:py-4 rounded-full text-xs md:text-sm font-medium tracking-wide uppercase hover:bg-white/90 transition-all duration-300 shadow-lg hover:shadow-xl'
-                >
-                    VIEW MY CARD
-                </a>
-            </div> */}
 
             {/* Fade-in Animation */}
             <style jsx>{`

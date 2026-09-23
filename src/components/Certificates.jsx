@@ -86,10 +86,7 @@ const Certificates = () => {
 
 
 
-    return <section id="certificates" className="w-full py-16 md:py-24 font-Quick text-text-primary bg-black z-0!">
-        {/* fade superior */}
-        <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent z-10" />
-
+    return <section id="certificates" className="w-full py-16 md:py-24 font-Quick text-text-primary z-0!">
         <div className='flex flex-col items-center gap-4 mb-12'>
             <div className='inline-flex items-center gap-2'>
 

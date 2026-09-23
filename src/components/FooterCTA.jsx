@@ -5,20 +5,7 @@ const FooterCTA = () => {
     const year = new Date().getFullYear()
 
     return (
-        <section id="contact" className="relative min-h-screen w-full bg-[#0b0f14] flex items-center py-20 md:py-0">
-
-            {/* fade a los laterales  */}
-            <div className="hidden md:block pointer-events-none absolute inset-y-0 left-0 w-40 bg-gradient-to-r from-black to-transparent z-10" />
-
-            <div className="hidden md:block pointer-events-none absolute inset-y-0 right-0 w-40 bg-gradient-to-l from-black via-black/80 to-transparent z-10" />
-
-            {/* fin de fade a los laterales  */}
-
-            {/* fade superior */}
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent z-10" />
-
-            {/* Glow Effect Background - Optimized for mobile */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-green-600/15 rounded-full blur-[80px] md:blur-[150px] pointer-events-none"></div>
+        <section id="contact" className="relative min-h-screen w-full flex items-center py-20 md:py-0">
 
             {/* Main Content */}
             <div className="relative z-10 w-full max-w-7xl mx-auto max-md:py-10 px-10 md:px-26">
@@ -138,8 +125,6 @@ const FooterCTA = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-black to-transparent z-10" />
 
             {/* Animations */}
             <style jsx>{`

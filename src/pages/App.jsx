@@ -10,11 +10,13 @@ import FloatButton from '../components/FloatButton'
 import ProjectsTab from '../components/ProjectsTab.jsx'
 import ProjectsSection from '../components/ProjectsSection.jsx'
 import Resume from '../components/Resume'
+import AmbientGlow from '../components/AmbientGlow.jsx'
 
 function App() {
 
   return (
     <div className='min-h-dvh bg-black overflow-hidden relative'>
+      <AmbientGlow />
 
       <main className='relative'>
         <Hero />

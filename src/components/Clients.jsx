@@ -19,10 +19,8 @@ const Clients = () => {
     return (
         <section
             id='clients'
-            className='w-full py-16 md:py-24 font-Quick text-text-primary bg-black relative z-0!'
+            className='w-full py-16 md:py-24 font-Quick text-text-primary relative z-0!'
         >
-            <div className='pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent z-10' />
-
             <div className='flex flex-col items-center gap-4 mb-12'>
                 <span className='pre-header'>Confianza</span>
                 <h2 className='section-header'>Mis clientes</h2>

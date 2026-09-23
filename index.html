@@ -19,59 +19,7 @@
   <body class="flex justify-center bg-black mx-auto min-h-dvh">
   <!-- <body class="flex justify-center bg-black-900 mx-auto min-h-dvh"> -->
 
-    <div id="stars"></div>
     <div id="root"></div>
-
-    <script >
-      document.addEventListener("DOMContentLoaded",function(){
-    
-          const stars = document.getElementById("stars");
-          const isMobile = window.innerWidth < 768;
-          const isLowEnd = navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4;
-          
-          let maxStars = isMobile ? 15 : 30;
-          let currentStars = 0;
-          
-          if (isMobile && isLowEnd) {
-            maxStars = 8;
-          }
-          
-          const interval = isMobile ? 300 : 100;
-
-          setInterval(createStar, interval);
-
-          function createStar(){
-              if (currentStars >= maxStars) {
-                return;
-              }
-              
-              currentStars++;
-              
-              let right=Math.random()*500;
-              let viewportHeight = window.innerHeight;
-              let top=Math.random()*viewportHeight;
-
-              let star=document.createElement("div");
-              star.classList.add("star")
-              stars.appendChild(star);
-
-              star.style.top=top+"px";
-              star.style.right = right + "px";
-
-              let moveInterval = setInterval(runStar, isMobile ? 20 : 10);
-
-              function runStar() {
-                if (right >= window.innerWidth + 50) {
-                  clearInterval(moveInterval);
-                  star.remove();
-                  currentStars--;
-                }
-                right += isMobile ? 1 : 1.5;
-                star.style.right = right + "px";
-              }
-          } 
-      })
-    </script>
     <script type="module" src="/src/main.jsx"></script>
 
   </body>
