@@ -16,10 +16,10 @@ const Navbar = () => {
     }, [isOpen])
 
     const menuLinks = [
-        { label: 'HOME', href: '#' },
-        { label: 'ABOUT ME', href: '#about' },
-        { label: 'PROJECTS', href: '#projects' },
-        { label: 'CONTACT', href: '#contact' }
+        { label: 'INICIO', href: '#' },
+        { label: 'SOBRE MI', href: '#about' },
+        { label: 'PROYECTOS', href: '#projects' },
+        { label: 'CONTACTO', href: '#contact' }
     ]
 
     const handleLinkClick = () => {
@@ -41,7 +41,7 @@ const Navbar = () => {
                     >
                         <div className='w-24 md:w-32 h-[5px] bg-white/40 rounded-full group-hover:bg-white transition-all duration-300'></div>
                         <span className='text-white/60 text-xs md:text-sm tracking-[0.3em] font-light group-hover:text-white transition-all duration-300'>
-                            {isOpen ? 'CLOSE' : 'MENU'}
+                            {isOpen ? 'CERRAR' : 'MENU'}
                         </span>
                     </button>
 
@@ -49,7 +49,7 @@ const Navbar = () => {
                         href='#contact'
                         className='hidden md:block cursor-pointer hover:text-green-500 transition-all duration-300 text-white text-base md:text-xl tracking-[0.2em] font-light uppercase'
                     >
-                        CONTACT
+                        CONTACTO
                     </a>
                 </div>
             </nav>
