@@ -37,7 +37,7 @@ const Hero = () => {
                 <div className='relative w-full max-w-[280px] md:max-w-[340px] mb-8 md:mb-12'>
                     <div className='relative z-10 aspect-[4/5] rounded-xl shadow-2xl group'>
                         <TiltImage
-                            src='/IMG-20230911-WA0113.webp'
+                            src='/imgs/heybryan-img.webp'
                             alt='Bryan Vivanco Silva'
                         />
                     </div>

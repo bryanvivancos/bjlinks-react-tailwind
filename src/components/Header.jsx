@@ -7,7 +7,7 @@ const Header = () => {
         <header id='profile' className='flex flex-col justify-center items-center mb-8 mt-4 z-10
             '>
             <div className='relative '>
-                <img src='/IMG-20230911-WA0113.webp' alt="imagen de bryan web"
+                <img src='/imgs/heybryan-img.webp' alt="imagen de bryan web"
                     loading="eager"
                     decoding="async"
                     className='h-50 md:h-70 object-cover mask-radial-at-center mask-radial-from-65% mask-radial-to-70% animate-slide-in-top mt-4 '
